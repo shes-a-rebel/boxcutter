@@ -1,2 +1,1 @@
-# boxcutter
-Web-based party game launcher
+# Box Cutter

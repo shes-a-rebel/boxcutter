@@ -1,0 +1,1086 @@
+{
+  "games": [
+    {
+      "collection": "1",
+      "title": "Drawful",
+      "description": "Since 2014, players have attempted to draw absurd things like “Napoleon riding a squirrel.” As a result, a lot of hilariously bad art has been created. We’re proud to say that this is one of our biggest contributions to society.",
+      "type": "pack",
+      "license": "host",
+      "hidden": true,
+      "swf": "Drawful",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "0",
+      "title": "Drawful 2",
+      "description": "For 3-8 players and an audience of thousands! Your phones or tablets are your controllers! The game of terrible drawings and hilariously wrong answers.",
+      "type": "app",
+      "license": "host",
+      "appid": "442070",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "0",
+      "title": "Fibbage XL",
+      "sorting": "Fibbage 1.5",
+      "description": "NOTE: This game first appeared in The Jackbox Party Pack. It’s Fibbage XL – The Hilarious Bluffing Party Game in standalone form! Fool your friends with your lies, avoid theirs, and find the (usually outrageous) truth. “The mayor of Rabbit Hash, Kentucky is a ____.” Baby? Rabbit? Ham sandwich? Go!",
+      "type": "app",
+      "license": "host",
+      "appid": "448080",
+      "gameplay": "deception",
+      "min": 2,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "1",
+      "title": "Fibbage XL",
+      "sorting": "Fibbage 1",
+      "description": "In Fibbage XL, players are presented with an obscure trivia fact that’s missing one key detail. The objective is to fill in the blank so that it fools others into thinking it’s the truth.",
+      "type": "pack",
+      "license": "host",
+      "hidden": true,
+      "subfolder": "Fibbage",
+      "swf": "FibbageXL",
+      "gameplay": "deception",
+      "min": 2,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "0",
+      "title": "Quiplash",
+      "description": "For 3-8 Players and an Audience of thousands! Your phones or tablets are your controllers! The gut-busting, say-anything, no-rules party game!",
+      "type": "app",
+      "license": "host",
+      "appid": "351510",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "0",
+      "title": "Quiplash 2 InterLASHional",
+      "description": "The \"say anything\" party game is going international! All the hilarious content from Quiplash 2, now in French, Italian, German, and Spanish! With 100 NEW prompts in each language! (And you can still play in boring old English.) Get this QUINTILINGUAL Quiplash now, and take your next party global!",
+      "type": "app",
+      "license": "host",
+      "appid": "1111940",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "1",
+      "title": "You Don't Know Jack 2015",
+      "sorting": "You Don't Know Jack 2015",
+      "description": "YOU DON’T KNOW JACK 2015 is the very first Party Pack edition of your favorite game show, where high culture and pop culture collide!",
+      "type": "pack",
+      "license": "host",
+      "swf": "YDKJ2015",
+      "gameplay": "trivia",
+      "min": 1,
+      "max": 4,
+      "time": 20
+    },
+    {
+      "collection": "1",
+      "title": "Lie Swatter",
+      "description": "Lie Swatter is the perfect game to play if you need a good random fact to have in your back pocket for cocktail parties, or you just hate bugs.",
+      "type": "pack",
+      "license": "host",
+      "swf": "LieSwatterParty",
+      "gameplay": "true-or-false",
+      "min": 1,
+      "max": 100
+    },
+    {
+      "collection": "1",
+      "title": "Word Spud",
+      "description": "If you’re reading about Word Spud, congratulations. You’ve officially become a hardcore Jackbox Games fan. Word Spud is the racy-as-you-want-to-be fill-in-the-blank word game.",
+      "type": "pack",
+      "license": "host",
+      "swf": "WordSpud",
+      "gameplay": "writing",
+      "min": 2,
+      "max": 8
+    },
+    {
+      "collection": "2",
+      "title": "Bidiots",
+      "description": "Going once… Going twice… SOLD to the player who might’ve just made a huge mistake! Put on your monocle as we explore this fine “art” auction game.",
+      "type": "pack",
+      "license": "host",
+      "swf": "Auction",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 6,
+      "time": 15
+    },
+    {
+      "collection": "2",
+      "title": "Bomb Corp.",
+      "description": "You’re an intern at the office doing intern-y things like getting coffee, stapling papers, and defusing bombs. Yes, you’re keeping bombs from exploding. Did we mention its unpaid?",
+      "type": "pack",
+      "license": "host",
+      "swf": "BombInterns",
+      "gameplay": "puzzle",
+      "min": 1,
+      "max": 4,
+      "time": 15
+    },
+    {
+      "collection": "2",
+      "title": "Earwax",
+      "description": "When you own a huge library of fart sound effects, you are morally obligated to build a game around it, so that’s what we did with Earwax.",
+      "type": "pack",
+      "license": "host",
+      "swf": "Earwax",
+      "gameplay": "musical",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "2",
+      "title": "Fibbage 2",
+      "description": "The fib-to-win trivia game returns. Players are presented with an obscure trivia fact that’s missing one key detail. The objective is to fill in the blank so that it fools others into thinking it’s the truth.",
+      "type": "pack",
+      "license": "host",
+      "swf": "Fibbage2",
+      "gameplay": "deception",
+      "min": 2,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "2",
+      "title": "Quiplash XL",
+      "sorting": "Quiplash 1.5",
+      "description": "Quiplash XL is a fan favorite, it even got featured on (name drop) The Tonight Show with Jimmy Fallon! Well-loved gameplay and celebrity endorsements - it’s a winner!",
+      "type": "pack",
+      "license": "host",
+      "swf": "Quiplash",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "3",
+      "title": "Tee K.O.",
+      "description": "Welcome to mysterious T-Shirt Island, where the most hardened warriors in the world join you to compete in a battle of… t-shirts.",
+      "license": "host",
+      "type": "pack",
+      "swf": "AwShirt",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 30
+    },
+    {
+      "collection": "3",
+      "title": "Quiplash 2",
+      "description": "Quiplash 2 picks up where its predecessor left off. Enjoy original prompts and twists on the classic formula. Just like in Quiplash, players answer a wide array of fun prompts.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Quiplash2",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "3",
+      "title": "Trivia Murder Party",
+      "description": "Waaaaake Up! It’s time to play Trivia Murder Party, a deadly quiz show where you match wits with a trivia-obsessed killer. Just stay alive and you’ll be fine.",
+      "license": "host",
+      "type": "pack",
+      "swf": "TriviaDeath",
+      "gameplay": "trivia",
+      "min": 1,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "3",
+      "title": "Fakin' It!",
+      "description": "In Fakin’ It, you can FINALLY discover how bad your friends are at lying, without any relationship-ending arguments!",
+      "license": "host",
+      "type": "pack",
+      "swf": "FakinIt",
+      "gameplay": "deception",
+      "min": 3,
+      "max": 6,
+      "time": 15
+    },
+    {
+      "collection": "3",
+      "title": "Guesspionage",
+      "description": "Guesspionage tests your knowledge of the human condition. Players predict how real people responded to basic poll questions like “What percentage of people have peed in a public pool?”",
+      "license": "host",
+      "type": "pack",
+      "swf": "PollPosition",
+      "gameplay": "voting",
+      "min": 2,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "4",
+      "title": "Fibbage 3",
+      "description": "It was only a matter of time before we created a loungey 70s version of Fibbage… and that time was 2017 in The Jackbox Party Pack 4.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Fibbage3",
+      "gameplay": "deception",
+      "min": 2,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "4",
+      "title": "Survive the Internet",
+      "description": "You’re familiar with the “Internet” right? Imagine a game that takes place within the Jackbox Games version of the Internet. It’s equally terrifying and rewarding.",
+      "license": "host",
+      "type": "pack",
+      "swf": "SurviveTheInternet",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "collection": "4",
+      "title": "Monster Seeking Monster",
+      "description": "At the end of the day, we’re all just monsters trying to find love. There’s no better party game to live this truth than Monster Seeking Monster.",
+      "license": "host",
+      "type": "pack",
+      "swf": "MonsterMingle",
+      "gameplay": "dating",
+      "min": 3,
+      "max": 7,
+      "time": 15
+    },
+    {
+      "collection": "4",
+      "title": "Civic Doodle",
+      "description": "The good people of Doodle Valley have enlisted you and your fellow players to beautify the town with ridiculous murals... We’re not sure why they trust you.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Overdrawn",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "collection": "4",
+      "title": "Bracketeering",
+      "description": "Bracketeering is the game of strong opinions about stupid things. Everything has stakes and everyone is allowed to weigh in and make a final ruling on the truly absurd.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Bracketeering",
+      "gameplay": "voting",
+      "min": 3,
+      "max": 16,
+      "time": 15
+    },
+    {
+      "collection": "5",
+      "title": "Mad Verse City",
+      "description": "Giant robots have arrived from space and to set the city ablaze with dope rhymes. Who can channel their inner MC to win this robot rap battle?",
+      "license": "host",
+      "type": "pack",
+      "swf": "RapBattle",
+      "gameplay": "musical",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "5",
+      "title": "You Don't Know Jack Full Stream",
+      "sorting": "You Don't Know Jack 2018",
+      "description": "The irreverent trivia classic returns, revamped and better than ever! Your favorite host, Cookie Masterson, returns with all-new twisted trivia questions.",
+      "license": "host",
+      "type": "pack",
+      "swf": "YDKJ2018",
+      "gameplay": "trivia",
+      "min": 1,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "5",
+      "title": "Split the Room",
+      "description": "Imagine a world where there’s a party game about creating hilarious and divisive hypothetical questions. Well, it exists already and it’s called Split the Room.",
+      "license": "host",
+      "type": "pack",
+      "swf": "SplitTheRoom",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "5",
+      "title": "Patently Stupid",
+      "description": "Is your head just bursting with inventive ideas?! Well, show off your creative genius with Patently Stupid, the game that will turn you into a modern Edison!",
+      "license": "host",
+      "type": "pack",
+      "swf": "PatentlyStupid",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "collection": "5",
+      "title": "Zeeple Dome",
+      "description": "Welcome, Earthlings, to the ZEEPLE DOME! You are now honored contestants on the Bleecha Nebula’s most celebrated (and incredibly violent) game show!!!",
+      "license": "host",
+      "type": "pack",
+      "swf": "SlingShoot",
+      "gameplay": "skill",
+      "min": 1,
+      "max": 6,
+      "time": 10
+    },
+    {
+      "collection": "6",
+      "title": "Role Models",
+      "description": "Everybody’s somebody, so who are you? The planner? The flake? The sassy one? Only your friends know the real you, and now they have the perfect excuse to tell you all about it.",
+      "license": "host",
+      "type": "pack",
+      "swf": "RoleModels",
+      "gameplay": "voting",
+      "min": 3,
+      "max": 6,
+      "time": 15
+    },
+    {
+      "collection": "6",
+      "title": "Push The Button",
+      "description": "Your ship has been invaded by aliens who look just like your best friends! Find the imposters and eject them into space before the timer runs out or we’re all doomed!",
+      "license": "host",
+      "type": "pack",
+      "swf": "PushTheButton",
+      "gameplay": "deception",
+      "min": 4,
+      "max": 10,
+      "time": 20
+    },
+    {
+      "collection": "6",
+      "title": "Joke Boat",
+      "description": "Ahoy there, you must be the comedians. The cruise ship’s talent show is tonight so grab your ventriloquist dummy and follow me! We’ve got some jokes to write!",
+      "license": "host",
+      "type": "pack",
+      "swf": "Jokeboat",
+      "gameplay": "writing",
+      "gameplaybackup": "speaking",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "6",
+      "title": "Trivia Murder Party 2",
+      "description": "The game show-loving serial killer from Trivia Murder Party is back, with more trivia and dastardly new mini-games. Can you and your friends survive a night in the Murder Hotel?",
+      "license": "host",
+      "type": "pack",
+      "swf": "TriviaDeath2",
+      "gameplay": "trivia",
+      "min": 1,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "6",
+      "title": "Dictionarium",
+      "description": "Humans have been inventing words and phrases for centuries. Now it’s your turn to contribute an entry to the pages of the Dictionarium.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Ridictionary",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 10
+    },
+    {
+      "tested": false,
+      "collection": "7",
+      "title": "Devils and the Details",
+      "description": "Congratulations, demons! You’ll be moving to an average suburban neighborhood, where you’ll take part in the pointless and highly stressful rituals of mortal life.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Everyday",
+      "gameplay": "puzzle",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "7",
+      "title": "Champ'd Up",
+      "description": "Enter the Scrawliseum, where player-created characters fight over unusual titles. Heavy favorites are pitted against underdogs to create hilarious, high-octane matches.",
+      "license": "host",
+      "type": "pack",
+      "swf": "WorldChampions",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "7",
+      "title": "Talking Points",
+      "description": "Public speaking is fun, actually. Players are given picture slides they’ve never seen and words they didn’t write. Giving a speech has never been this weird or this funny.",
+      "license": "host",
+      "type": "pack",
+      "swf": "JackboxTalks",
+      "gameplay": "speaking",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "7",
+      "title": "Quiplash 3",
+      "description": "Quiplash 3 has the same classic Quiplash style with an all new final round! Each player answers a series of prompts before entering into a head-to-head battle of the wits!",
+      "license": "host",
+      "type": "pack",
+      "swf": "Quiplash3",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "7",
+      "title": "Blather 'Round",
+      "description": "Blather ‘Round is a guessing game full of blundering, stumbling, and–yes!– blathering. Describe pop culture items to your friends, but you’ll never get quiiiiite the right words.",
+      "license": "host",
+      "type": "pack",
+      "swf": "BlankyBlank",
+      "gameplay": "trivia",
+      "min": 2,
+      "max": 6,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "8",
+      "title": "Job Job",
+      "description": "Welcome to Job Job, a game where everybody interviews for a job! Funny and unique answers get votes, and the player with the most points in the end SCORES THE JOB (JOB)!",
+      "license": "host",
+      "type": "pack",
+      "swf": "JobGame",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 10,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "8",
+      "title": "Weapons Drawn",
+      "description": "THERE’S BEEN A MURDER! Several in fact... Weapons Drawn is a social deduction game where everyone did it. Commit one yourself before solving others.",
+      "license": "host",
+      "type": "pack",
+      "swf": "MurderDetectives",
+      "gameplay": "drawing",
+      "min": 4,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "8",
+      "title": "Drawful Animate",
+      "sorting": "Drawful 3",
+      "description": "It’s alive! The classic guessing game makes an energetic return in Drawful: Animate, which has players drawing two-frame animations based on absurd prompts.",
+      "license": "host",
+      "type": "pack",
+      "swf": "DrawfulAnimate",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 10,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "8",
+      "title": "Wheel of Enormous Proportions",
+      "description": "The Wheel of Enormous Proportions is a hybrid game of trivia and chance hosted by an immortal, all-knowing wheel from a mountaintop in the sky.",
+      "license": "host",
+      "type": "pack",
+      "swf": "TheWheel",
+      "gameplay": "trivia",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "8",
+      "title": "Poll Mine",
+      "description": "A survey game of survival! Players divide into two teams, secretly answer survey questions, then try to guess the results. Can you open the correct doors and escape?!",
+      "license": "host",
+      "type": "pack",
+      "swf": "SurveyBomb",
+      "gameplay": "voting",
+      "min": 2,
+      "max": 10,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "9",
+      "title": "Trivia Murder Party 2",
+      "sorting": "Trivia Murder Party 2.5",
+      "description": "Still on the run from the police after the events of the first Trivia Murder Party, the serial killer host has moved into the Murder Hotel where he grew up. In the past his family killed unsuspecting guests at their hotel, but now the host is using the hotel to run his bizarre game show… where he kills unsuspecting guests.",
+      "license": "host",
+      "type": "pack",
+      "subfolder": "triviadeath2",
+      "swf": "TriviaDeath2",
+      "gameplay": "trivia",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "9",
+      "title": "Tee K.O.",
+      "sorting": "Tee K.O. 1.5",
+      "description": "In Tee K.O., players are on the clock to create drawings and write as many slogans as possible. The pictures and slogans are then given out at random. Whoever combines their drawings and slogans to create the best t-shirt wins, as designs are pitted against each other in head-to-head battles. The t-shirts with the highest votes in each round must survive the final gauntlet to become the best. Tee… K.O. Get it?",
+      "license": "host",
+      "type": "pack",
+      "swf": "AwShirt",
+      "gameplay": "trivia",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "9",
+      "title": "Quiplash 3",
+      "sorting": "Quiplash 3.5",
+      "description": "Players enter a head-to-head battle of wits by answering a comedic prompt and letting the other players (and the audience) decide which they like best",
+      "license": "host",
+      "type": "pack",
+      "swf": "Quiplash3",
+      "gameplay": "fill-in-the-blank",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "10",
+      "title": "JunkTopia",
+      "description": "A strange wizard has turned you into a frog! Create hilarious backstories for weird objects and then get them appraised. The player with the best items becomes human again!",
+      "license": "host",
+      "type": "pack",
+      "swf": "AntiqueGame",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "10",
+      "title": "Quixort",
+      "description": "In this trivia sorting factory, work with your team to sort falling answers into their proper order before they hit the floor. It’s as easy as A, C, B!",
+      "license": "host",
+      "type": "pack",
+      "swf": "Lineup",
+      "gameplay": "trivia",
+      "min": 1,
+      "max": 10,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "10",
+      "title": "Roomerang",
+      "description": "Channel your inner reality TV star in an attempt to come out on top! Respond to prompts, bring the competition and role-play to avoid being voted out.",
+      "license": "host",
+      "type": "pack",
+      "swf": "MakeFriends",
+      "gameplay": "writing",
+      "min": 4,
+      "max": 9,
+      "time": 30
+    },
+    {
+      "tested": false,
+      "collection": "10",
+      "title": "Nonsensory",
+      "description": "Professor Nanners is here to test your NSP (Nonsensory Perception). How close can you get to guessing where another player’s prompt ranks on the silliest of scales?",
+      "license": "host",
+      "type": "pack",
+      "swf": "RangeGame",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 25
+    },
+    {
+      "tested": false,
+      "collection": "10",
+      "title": "Fibbage 4",
+      "description": "The hilarious bluffing party game returns with an all-new Final Fibbage, video questions, and a fresh game mode! It’s a game so beloved that we decided to slap a 4 on it.",
+      "license": "host",
+      "type": "pack",
+      "swf": "Fibbage4",
+      "gameplay": "deception",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "11",
+      "title": "Fixty Text",
+      "description": "Ever wished someone would answer your texts for you? Imagined the masterful comebacks you and your friends would create if you mashed all your brains together? You’re in luck! This game lets you play out that fantasy with all of the chaos, and none of the backlash",
+      "license": "host",
+      "type": "pack",
+      "swf": "",
+      "gameplay": "writing",
+      "min": 3,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "tested": false,
+      "collection": "11",
+      "title": "Tee K.O. 2",
+      "description": "The fan-favorite fashion throw down returns! Create the ultimate garment out of your own weird drawings and slogans, then send it into battle. But with new drawing tools, new clothing options like hoodies and tank tops, and a new button-pounding final round… who will emerge as the next champion of Tee Shirt Island?",
+      "license": "host",
+      "type": "pack",
+      "swf": "",
+      "gameplay": "drawing",
+      "min": 3,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "11",
+      "title": "Dodo Re Mi",
+      "description": "Hello gorgeous nature. Welcome to an uncharted jungle, inhabited by musical birds who play songs for a carnivorous plant that MIGHT eat them, if they don’t play their notes accurately. Are they dodos? No. Did they evolve from dodos? Maybe…don’t overthink it. We didn’t.",
+      "license": "host",
+      "type": "pack",
+      "swf": "",
+      "gameplay": "musical",
+      "min": 1,
+      "max": 9,
+      "time": 5
+    },
+    {
+      "tested": false,
+      "collection": "11",
+      "title": "Hypnotorious",
+      "description": "HYPNOSIS, TEAMWORK AND HIDDEN IDENTITIES!!! In Hypnotorious, players are attending a hypnotist’s show, where, as you might expect, they get hypnotized. Each player will take on a new, unique identity such as Frankenstein, a snowman or a carrot. They will then be asked to answer questions as their character would.",
+      "license": "host",
+      "type": "pack",
+      "swf": "",
+      "gameplay": "deception",
+      "min": 4,
+      "max": 8,
+      "time": 20
+    },
+    {
+      "tested": false,
+      "collection": "11",
+      "title": "Time Jinx",
+      "description": "What would you do if you had a time machine? Would you go back and try to fix some mistakes? Would you travel into the future to see who you’ve become? No, of course not! You’d use it to play an immersive trivia game!",
+      "license": "host",
+      "type": "pack",
+      "swf": "",
+      "gameplay": "trivia",
+      "min": 1,
+      "max": 8,
+      "time": 15
+    },
+    {
+      "collection": "-1",
+      "title": "Among Us",
+      "description": "An online and local party game of teamwork and betrayal for 4-15 players...in space!",
+      "type": "app",
+      "gameplay": "deception",
+      "license": "all",
+      "appid": "945360",
+      "min": 4,
+      "max": 15
+    },
+    {
+      "collection": "-1",
+      "title": "Golf With Your Friends",
+      "description": "Why have friends if not to play Golf... With Your Friends! Nothing is out of bounds as you take on courses filled with fast paced, exciting, simultaneous mini golf for up to 12 players!",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "431240",
+      "min": 1,
+      "max": 12
+    },
+    {
+      "collection": "-1",
+      "title": "Goose Goose Duck",
+      "description": "Time to be a Silly Goose! Immerse yourself in the various environments of the Birdverse of Goose Goose Duck. A game of social deduction where you and your fellow geese must work together to complete your mission. Watch out for those malicious Mallards and other birds!",
+      "type": "app",
+      "gameplay": "deception",
+      "license": "free",
+      "appid": "1568590",
+      "min": 5,
+      "max": 16
+    },
+    {
+      "tested": false,
+      "collection": "-1",
+      "title": "King of the Castle",
+      "description": "Take your rightful place on the throne in this political party game for 4+ players. Rule the kingdom with an iron fist or silver tongue as you steer through bloodshed, intrigue & madcap disaster! Can you keep your crown when others plot your downfall? More importantly, can you keep your head?",
+      "type": "app",
+      "license": "host",
+      "gameplay": "voting",
+      "appid": "1839880",
+      "min": 4
+    },
+    {
+      "collection": "-1",
+      "title": "Marbels on Stream",
+      "description": "Marbles on Stream is a Marble Racing game for EVERYONE! You can simulate races yourself or stream it on Twitch.tv with your viewers! Many features in game to help interact with your viewers and engage with them in unique ways. 3 ways to play! Download and stream! Download the MoS app on your mobile device! Get on Twitch.",
+      "type": "app",
+      "license": "free",
+      "appid": "1170970",
+      "min": 1
+    },
+    {
+      "tested": false,
+      "collection": "-1",
+      "title": "Party Animals",
+      "description": "Fight your friends as puppies, kittens and other fuzzy creatures in PARTY ANIMALS! Paw it out with your friends remotely, or huddle together for chaotic fun on the same screen. Interact with the world under our realistic physics engine. Did I mention PUPPIES?",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "1260320",
+      "max": 8
+    },
+    {
+      "tested": false,
+      "collection": "-1",
+      "title": "Pummel Party",
+      "description": "Pummel Party is a 4-8 player online and local-multiplayer party game. Pummel friends or AI using a wide array of absurd items in the board mode and compete to destroy friendships in the unique collection of minigames.",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "880940",
+      "min": 4,
+      "max": 8
+    },
+    {
+      "collection": "-1",
+      "title": "Demonologist",
+      "description": "Demonologist is a Co-Op horror game that can be played with at least 1 and up to 4 players. Your goal is to identify the type of evil spirit in cursed places and exorcise it using your equipment, either alone or with your team.",
+      "type": "app",
+      "gameplay": "puzzle",
+      "license": "all",
+      "appid": "1929610",
+      "min": 1,
+      "max": 4
+    },
+    {
+      "collection": "-1",
+      "title": "Phasmophobia",
+      "description": "Phasmophobia is a 4 player online co-op psychological horror. Paranormal activity is on the rise and it’s up to you and your team to use all the ghost-hunting equipment at your disposal in order to gather as much evidence as you can.",
+      "type": "app",
+      "gameplay": "puzzle",
+      "license": "all",
+      "appid": "739630",
+      "min": 1,
+      "max": 4
+    },
+    {
+      "collection": "-1",
+      "title": "Pwnk: Stream Battle Royale",
+      "description": "Pwnk has a wide variety of community games to engage your live audiences and grow your stream. Create your live game show using Pwnk's mini-game battle royale! Your audiences will be able to play with you in real-time, create funny content, and even help you battle against other streamers!",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "free",
+      "appid": "1822460"
+    },
+    {
+      "tested": false,
+      "collection": "-1",
+      "title": "RiffTrax: The Game",
+      "description": "RiffTrax: The Game is a multiplayer party game where players compete to make bad movies funny. Do you have what it takes to be the next movie riffing genius? Grab your friends and make fun of some of the worst cinematic abominations ever created.",
+      "type": "app",
+      "gameplay": "writing",
+      "license": "host",
+      "appid": "1707870",
+      "min": 3,
+      "max": 6
+    },
+    {
+      "collection": "-1",
+      "title": "Stream Animals",
+      "description": "Use Your Words is the new party game for funny people and their unfunny friends! Laugh your way through four hilarious mini-games! Use your smartphone to fill in the blank, or try your luck using one of our answers to get laughs! No matter your strategy, Use Your Words brings comedy home!",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "free",
+      "appid": "1029340"
+    },
+    {
+      "tested": false,
+      "collection": "-1",
+      "title": "Use Your Words",
+      "description": "Use Your Words is the new party game for funny people and their unfunny friends! Laugh your way through four hilarious mini-games! Use your smartphone to fill in the blank, or try your luck using one of our answers to get laughs! No matter your strategy, Use Your Words brings comedy home!",
+      "type": "app",
+      "gameplay": "writing",
+      "license": "host",
+      "appid": "521350",
+      "min": 3,
+      "max": 6
+    },
+    {
+      "tested": false,
+      "collection": "-1",
+      "title": "What The Dub?!",
+      "description": "What The Dub?! is a multiplayer party game where each player overdubs missing dialogue from hilariously awful B-movies, outdated PSAs, and bizarre industrial films, with their own witty (or just plain stupid) dubs!",
+      "type": "app",
+      "gameplay": "writing",
+      "license": "host",
+      "appid": "1495860",
+      "min": 3,
+      "max": 6
+    },
+    {
+      "collection": "-1",
+      "title": "Words On Stream",
+      "description": "Words On Stream, the free game that will boost your live streams on Twitch and YouTube. You and your audience try to hit the words using the stream chat.",
+      "image": "words_on_stream.jpg",
+      "type": "web",
+      "license": "free",
+      "gameplay": "writing",
+      "website": "https://www.wos.gg/en/"
+    },
+    {
+      "collection": "-1",
+      "title": "Gartic",
+      "description": "Play Gartic.io online and for free. Draw and guess the words as fast as you can! Join on worldwide rooms or create your own.",
+      "image": "gartic.jpg",
+      "type": "web",
+      "license": "free",
+      "gameplay": "drawing",
+      "website": "https://gartic.io/"
+    },
+    {
+      "collection": "-1",
+      "title": "Gartic on Stream",
+      "description": "Invite your public to guess real time made drawings with you on your stream lives. The boost on the interaction between you and your audience will blow your mind!",
+      "image": "gartic_on_stream.jpg",
+      "type": "web",
+      "license": "free",
+      "gameplay": "writing",
+      "website": "https://gos.gg/en/"
+    },
+    {
+      "collection": "-1",
+      "title": "Gartic Phone",
+      "description": "The online Telephone Game! Play the popular game for free now.",
+      "image": "gartic_phone.png",
+      "type": "web",
+      "license": "free",
+      "gameplay": "drawing",
+      "website": "https://garticphone.com/"
+    },
+    {
+      "collection": "-1",
+      "title": "Sketchful.io",
+      "description": "Sketchful.io is a free online drawing and guessing game. Play pictionary with anyone in the world! Be the fastest to guess and earn the most points to win!",
+      "image": "sketchful.jpg",
+      "type": "web",
+      "license": "free",
+      "gameplay": "drawing",
+      "website": "https://sketchful.io/"
+    },
+    {
+      "collection": "-1",
+      "title": "skribbl.io",
+      "description": "skribbl.io is a free online multiplayer drawing and guessing pictionary game.",
+      "image": "skribbl.jpg",
+      "type": "web",
+      "license": "free",
+      "gameplay": "drawing",
+      "website": "https://skribbl.io/"
+    }
+  ],
+  "collections": {
+    "-1": {
+      "title": "Other Games",
+      "sorting": "0",
+      "disabled": true
+    },
+    "0": {
+      "title": "Standalone Jackbox Titles",
+      "titleShort": "Standalone Games",
+      "sorting": "0"
+    },
+    "1": {
+      "title": "The Jackbox Party Pack",
+      "titleShort": "Party Pack 1",
+      "sorting": "1",
+      "appid": "331670"
+    },
+    "2": {
+      "title": "The Jackbox Party Pack 2",
+      "titleShort": "Party Pack 2",
+      "sorting": "2",
+      "appid": "397460"
+    },
+    "3": {
+      "title": "The Jackbox Party Pack 3",
+      "titleShort": "Party Pack 3",
+      "sorting": "3",
+      "appid": "434170"
+    },
+    "4": {
+      "title": "The Jackbox Party Pack 4",
+      "titleShort": "Party Pack 4",
+      "sorting": "4",
+      "appid": "610180"
+    },
+    "5": {
+      "title": "The Jackbox Party Pack 5",
+      "titleShort": "Party Pack 5",
+      "sorting": "5",
+      "appid": "774461"
+    },
+    "6": {
+      "title": "The Jackbox Party Pack 6",
+      "titleShort": "Party Pack 6",
+      "sorting": "6",
+      "appid": "1005300"
+    },
+    "7": {
+      "title": "The Jackbox Party Pack 7",
+      "titleShort": "Party Pack 7",
+      "sorting": "7",
+      "appid": "1211630"
+    },
+    "8": {
+      "title": "The Jackbox Party Pack 8",
+      "titleShort": "Party Pack 8",
+      "sorting": "8",
+      "appid": "1552350"
+    },
+    "9": {
+      "title": "The Jackbox Party Starter",
+      "titleShort": "Party Starter",
+      "sorting": "9",
+      "appid": "1755580"
+    },
+    "10": {
+      "title": "The Jackbox Party Pack 9",
+      "titleShort": "Party Pack 9",
+      "sorting": "10",
+      "appid": "1850960"
+    },
+    "11": {
+      "title": "The Jackbox Party Pack 10",
+      "titleShort": "Party Pack 10",
+      "sorting": "11",
+      "appid": "2216830",
+      "hidden": true
+    }
+  },
+  "licenses": {
+    "free": {
+      "title": "Free-to-Play",
+      "description": "Games that are completely free to play.",
+      "disabled": true
+    },
+    "host": {
+      "title": "Pay-to-Host",
+      "description": "Games which the host must purchase a license, but anyone else can join their lobby for free."
+    },
+    "all": {
+      "title": "Pay-to-Play",
+      "description": "Games which everyone must purchase a license to play.",
+      "disabled": true
+    }
+  },
+  "types": {
+    "download": {
+      "title": "Steam Download",
+      "description": "Games that require the host and/or players download something. These titles will be launched through Steam."
+    },
+    "website": {
+      "title": "Website",
+      "description": "Games that are completely played through the web browser. No download required for the host or players.",
+      "disabled": true
+    }
+  },
+  "gameplays": {
+    "musical": {
+      "title": "Audio"
+    },
+    "dating": {
+      "title": "Dating",
+      "override": "deception"
+    },
+    "deception": {
+      "title": "Deception"
+    },
+    "drawing": {
+      "title": "Drawing"
+    },
+    "fill-in-the-blank": {
+      "title": "Fill in the Blank",
+      "override": "writing"
+    },
+    "puzzle": {
+      "title": "Puzzle"
+    },
+    "skill": {
+      "title": "Skill"
+    },
+    "speaking": {
+      "title": "Speaking"
+    },
+    "trivia": {
+      "title": "Trivia"
+    },
+    "true-or-false": {
+      "title": "True or False",
+      "override": "trivia"
+    },
+    "voting": {
+      "title": "Voting"
+    },
+    "writing": {
+      "title": "Writing"
+    },
+    "unknown": {
+      "title": "Other Gameplay"
+    }
+  }
+}

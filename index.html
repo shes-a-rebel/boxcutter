@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box cutter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/grayscale.css" id="colorscheme">
+</head>
+
+<body>
+    <div id="container">
+        <div id="loading">
+            <div id="spinner"></div>
+            <div id="status">Loading...</div>
+        </div>
+        <div id="popup-container">
+            <div id="popup">
+                <p>This utility is currently under active development. Features may be added, removed, or updated. Some features may not work as intended.</p>
+                <button id="popup-agree">Close</button>
+            </div>
+        </div>
+        <div id="title"><span class="bold center">box cutter</span></div>
+        <div id="sidebar">
+            <div id="filters" class="scrollable"><span class="bold center">Filters</span>
+                <ul>
+                    <li id="collection" onclick="collapseFilter(event, 'collection')">
+                        <span class="bold">Collection</span>
+                        <ul></ul>
+                    </li>
+                    <li id="type" onclick="collapseFilter(event, 'type')">
+                        <span class="bold">Type</span>
+                        <ul></ul>
+                    </li>
+                    <li id="license" onclick="collapseFilter(event, 'license')">
+                        <span class="bold">License</span>
+                        <ul></ul>
+                    </li>
+                    <li id="gameplay" onclick="collapseFilter(event, 'gameplay')">
+                        <span class="bold">Gameplay</span>
+                        <ul></ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="scale">
+            <input type="range" min="0.5" max="1.5" step="0.05" value="1" id="slider">
+        </div>
+        <div id="grid" class="scrollable"></div>
+        <div id="footer">
+            <div id="themes">
+            </div>
+            <div id="links">
+                <a href="https://twitch.tv/shes_a_rebel" target="_blank" title="Twitch"><img src="images\branding\twitch.png"></a>
+                <a href="https://ko-fi.com/shes_a_rebel" target="_blank" title="Ko-fi"><img src="images\branding\ko-fi.png"></a>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
