@@ -23,7 +23,8 @@
       "gameplay": "drawing",
       "min": 3,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "date": "2016-06-20"
     },
     {
       "collection": "0",
@@ -36,7 +37,8 @@
       "gameplay": "deception",
       "min": 2,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "date": "2016-03-24"
     },
     {
       "collection": "1",
@@ -63,7 +65,8 @@
       "gameplay": "writing",
       "min": 3,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "date": "2015-09-15"
     },
     {
       "tested": false,
@@ -76,7 +79,8 @@
       "gameplay": "writing",
       "min": 3,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "date": "2020-04-08"
     },
     {
       "collection": "1",
@@ -981,7 +985,7 @@
   "collections": {
     "-1": {
       "title": "Other Games",
-      "sorting": "0",
+      "sorting": "999",
       "disabled": true
     },
     "0": {
@@ -993,68 +997,79 @@
       "title": "The Jackbox Party Pack",
       "titleShort": "Party Pack 1",
       "sorting": "1",
-      "appid": "331670"
+      "appid": "331670",
+      "date": "2014-11-26"
     },
     "2": {
       "title": "The Jackbox Party Pack 2",
       "titleShort": "Party Pack 2",
       "sorting": "2",
-      "appid": "397460"
+      "appid": "397460",
+      "date": "2015-10-13"
     },
     "3": {
       "title": "The Jackbox Party Pack 3",
       "titleShort": "Party Pack 3",
       "sorting": "3",
-      "appid": "434170"
+      "appid": "434170",
+      "date": "2016-10-17"
     },
     "4": {
       "title": "The Jackbox Party Pack 4",
       "titleShort": "Party Pack 4",
       "sorting": "4",
-      "appid": "610180"
+      "appid": "610180",
+      "date": "2017-10-18"
     },
     "5": {
       "title": "The Jackbox Party Pack 5",
       "titleShort": "Party Pack 5",
       "sorting": "5",
-      "appid": "774461"
+      "appid": "774461",
+      "date": "2018-10-17"
     },
     "6": {
       "title": "The Jackbox Party Pack 6",
       "titleShort": "Party Pack 6",
       "sorting": "6",
-      "appid": "1005300"
+      "appid": "1005300",
+      "date": "2019-10-16"
     },
     "7": {
       "title": "The Jackbox Party Pack 7",
       "titleShort": "Party Pack 7",
       "sorting": "7",
-      "appid": "1211630"
+      "appid": "1211630",
+      "date": "2020-10-14"
     },
     "8": {
       "title": "The Jackbox Party Pack 8",
       "titleShort": "Party Pack 8",
       "sorting": "8",
-      "appid": "1552350"
+      "appid": "1552350",
+      "date": "2021-10-13"
     },
     "9": {
       "title": "The Jackbox Party Starter",
       "titleShort": "Party Starter",
       "sorting": "9",
-      "appid": "1755580"
+      "appid": "1755580",
+      "date": "2022-06-29"
     },
     "10": {
       "title": "The Jackbox Party Pack 9",
       "titleShort": "Party Pack 9",
       "sorting": "10",
-      "appid": "1850960"
+      "appid": "1850960",
+      "date": "2022-10-19"
     },
     "11": {
       "title": "The Jackbox Party Pack 10",
       "titleShort": "Party Pack 10",
       "sorting": "11",
       "appid": "2216830",
-      "hidden": true
+      "hidden": true,
+      "date": "2023-10-18"
     }
   },
   "licenses": {

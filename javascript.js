@@ -31,9 +31,10 @@ fetch(file).then(function (response) {
             const gameType = game.type;
 
             const collectionTitle = data.collections[gameCollection].title;
+            const collectionSorting = data.collections[gameCollection].sorting;
             const collectionDisabled = data.collections[gameCollection].disabled;
 
-            const licenseTitle = data.licenses[gameLicense].title;
+            // const licenseTitle = data.licenses[gameLicense].title;
             const licenseTooltip = data.licenses[gameLicense].tooltip;
             const licenseDisabled = data.licenses[gameLicense].disabled;
 
@@ -51,6 +52,8 @@ fetch(file).then(function (response) {
             const gameplayTitle = data.gameplays[gameGameplay].title;
             const gameplayDisabled = data.gameplays[gameGameplay].disabled;
 
+            const gameDate = gameType === 'pack' ? data.collections[gameCollection].date : game.date;
+
             // Tile: params
             let params = 'collection-' + gameCollection + ' license-' + gameLicense + ' type-' + ((gameType === 'app' || gameType === 'pack') ? 'download' : 'website') + ' gameplay-' + gameGameplay;
 
@@ -62,12 +65,16 @@ fetch(file).then(function (response) {
             }
             anchor.setAttribute('data-params', params);
 
+            // Create the tooltip
             let tooltip = gameTitle;
             if (gameType === 'pack') {
                 tooltip += ' (' + collectionTitle + ')';
             }
-            tooltip += '\n“' + gameDescription + '”\n';
-            tooltip += '\nGameplay: ' + gameplayTitle;
+            tooltip += '\n“' + gameDescription;
+            if (gameDate !== undefined) {
+                tooltip += '\nRelease Date: ' + gameDate;
+            }
+            tooltip += '\n\nGameplay: ' + gameplayTitle;
             // tooltip += '\nPlayers: ' + (gameMin !== undefined ? gameMin : "") + (gameMax !== undefined ? ' - ' + gameMax : '+');
             if ((gameMin === undefined || gameMin === 1) && gameMax !== undefined) {
                 tooltip += "\nPlayers: up to " + gameMax;
@@ -80,9 +87,10 @@ fetch(file).then(function (response) {
                 tooltip += '\nMinimum Time: ' + gameTime + ' minutes';
             }
             tooltip += '\n\n' + 'License: ' + licenseTooltip;
-
             anchor.title = tooltip;
             anchor.classList.add('tile');
+
+            // Generate the href and image
             if (gameType === 'app') {
                 const gameAppid = game.appid;
 
@@ -105,6 +113,14 @@ fetch(file).then(function (response) {
             }
             anchor.style.backgroundSize = 'cover';
             anchor.style.backgroundPosition = 'center';
+
+            // Set the sorting tags
+            anchor.setAttribute('data-title', gameTitle);
+            anchor.setAttribute('data-collection', collectionSorting);
+            anchor.setAttribute('data-gameplay', gameplayTitle);
+            anchor.setAttribute('data-date', gameDate);
+
+
             grid.appendChild(anchor);
         }
     }
@@ -273,8 +289,13 @@ fetch(file).then(function (response) {
     // Scale Slider
     const scaleCookie = getCookie('scale');
     if (scaleCookie) {
+        if (scaleCookie > 1.0) {
+            scaleCookie = 1.0;
+        }
         slider.value = scaleCookie;
         setScale(scaleCookie);
+    } else {
+        setScale(0.5);
     }
 
     // Remove loading screen
@@ -354,12 +375,12 @@ function setFilter(event) {
 }
 
 function setScale(scale) {
-    const width = 256 * scale;
-    const height = 118 * scale;
+    const width = 512 * scale;
+    const height = 240 * scale;
+
+    // Update the grid styles
     grid.style.gridTemplateColumns = 'repeat(auto-fill, ' + width + 'px)';
     grid.style.gridAutoRows = height + 'px';
-
-    slider.title = Math.floor(scale * 100) + '%';
 }
 
 // function setTheme(id) {
@@ -368,10 +389,32 @@ function setScale(scale) {
 //     setCookie("theme", id, 30)
 // }
 
+function sortTiles(option) {
+    const grid = document.getElementById('grid');
+    const tiles = Array.from(grid.getElementsByClassName('tile'));
+
+    tiles.sort((a, b) => {
+        const aValue = a.getAttribute(`data-${option}`);
+        const bValue = b.getAttribute(`data-${option}`);
+        return aValue.localeCompare(bValue);
+    });
+
+    // Clear the grid and append sorted tiles
+    grid.innerHTML = '';
+    tiles.forEach(tile => grid.appendChild(tile));
+}
+
 // Tile scale slider
 const slider = document.getElementById('slider');
 slider.addEventListener('input', () => {
     const scale = slider.value;
     setScale(scale);
     setCookie('scale', scale, 30);
+});
+
+// Sorting event
+const sortby = document.getElementById('sortby');
+sortby.addEventListener('change', function () {
+    const option = sortby.value;
+    sortTiles(option)
 });

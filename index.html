@@ -27,6 +27,14 @@
             <span class="center">a party game companion tool</span>
         </div>
         <div id="sidebar">
+            <div id="sorting"><span class="bold center">Sorting</span>
+                <select id="sortby">
+                    <option value="title">Title</option>
+                    <option value="collection">Collection</option>
+                    <option value="gameplay">Gameplay</option>
+                    <option value="date">Release Date</option>
+                </select>
+            </div>
             <div id="filters" class="scrollable"><span class="bold center">Filters</span>
                 <ul>
                     <li id="collection" onclick="collapseFilter(event, 'collection')">
@@ -49,7 +57,8 @@
             </div>
         </div>
         <div id="scale">
-            <input type="range" min="0.75" max="1.5" step="0.05" value="1" id="slider" title="100%">
+            <span>Zoom</span>
+            <input type="range" min="0.0" max="1.0" step="0.05" value="0.5" id="slider">
         </div>
         <div id="grid" class="scrollable"></div>
         <div id="footer">
