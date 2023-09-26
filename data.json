@@ -873,6 +873,17 @@
       "max": 6
     },
     {
+      "tested": false,
+      "collection": "-1",
+      "title": "Game Beasts",
+      "description": "Gang Beasts is a silly multiplayer party game with surly gelatinous characters, brutal slapstick fight sequences, and absurd hazardous environments, set in the mean streets of Beef City.",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "285900",
+      "max": 8
+    },
+    {
       "collection": "-1",
       "title": "Words On Stream",
       "description": "Words On Stream, the free game that will boost your live streams on Twitch and YouTube. You and your audience try to hit the words using the stream chat.",
@@ -1022,12 +1033,12 @@
     "host": {
       "title": "Pay-to-Host",
       "description": "Games which the host must purchase a license, but anyone else can join their lobby for free.",
-      "tooltip": "You must have a valid software license on Steam to host a lobby. Everyone else can join your lobby for free."
+      "tooltip": "You must have a valid software license on Steam to host a lobby using this utility. Everyone else can join your lobby for free."
     },
     "all": {
       "title": "Pay-to-Play",
       "description": "Games which everyone must purchase a license to play.",
-      "tooltip": "You must have a valid software license on Steam to host a lobby. Everyone else must have a valid software license on a compatible platform to join your lobby.",
+      "tooltip": "You must have a valid software license on Steam to host a lobby using this utility. Everyone else must have a valid software license on a compatible platform or service to join your lobby.",
       "disabled": true
     }
   },
