@@ -851,6 +851,40 @@
     {
       "tested": false,
       "collection": "-1",
+      "title": "Human Fall Flat",
+      "description": "Human Fall Flat is a hilarious, light-hearted platformer set in floating dreamscapes that can be played solo or with up to 8 players online. Free new levels keep its vibrant community rewarded.",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "477160",
+      "max": 8
+    },
+
+    {
+      "collection": "-1",
+      "title": "Left 4 Dead",
+      "description": "From Valve (the creators of Counter-Strike, Half-Life and more) comes Left 4 Dead, a co-op action horror game for the PC and Xbox 360 that casts up to four players in an epic struggle for survival against swarming zombie hordes and terrifying mutant monsters.",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "500",
+      "max": 4
+    },
+    {
+      "collection": "-1",
+      "title": "Left 4 Dead 2",
+      "description": "Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns.",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "550",
+      "max": 4
+    },
+
+
+    {
+      "tested": false,
+      "collection": "-1",
       "title": "Use Your Words",
       "description": "Use Your Words is the new party game for funny people and their unfunny friends! Laugh your way through four hilarious mini-games! Use your smartphone to fill in the blank, or try your luck using one of our answers to get laughs! No matter your strategy, Use Your Words brings comedy home!",
       "type": "app",
