@@ -34,6 +34,7 @@ fetch(file).then(function (response) {
             const collectionDisabled = data.collections[gameCollection].disabled;
 
             const licenseTitle = data.licenses[gameLicense].title;
+            const licenseTooltip = data.licenses[gameLicense].tooltip;
             const licenseDisabled = data.licenses[gameLicense].disabled;
 
             let gameGameplay;
@@ -78,7 +79,7 @@ fetch(file).then(function (response) {
             if (gameTime !== undefined) {
                 tooltip += '\nMinimum Time: ' + gameTime + ' minutes';
             }
-            tooltip += '\n\n' + 'License Type: ' + licenseTitle;
+            tooltip += '\n\n' + 'License: ' + licenseTooltip;
 
             anchor.title = tooltip;
             anchor.classList.add('tile');
