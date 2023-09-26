@@ -275,6 +275,8 @@ fetch(file).then(function (response) {
     if (scaleCookie) {
         slider.value = scaleCookie;
         setScale(scaleCookie);
+    } else {
+        setScale(0.5);
     }
 
     // Remove loading screen
@@ -354,12 +356,12 @@ function setFilter(event) {
 }
 
 function setScale(scale) {
-    const width = 256 * scale;
-    const height = 118 * scale;
+    // Clamp the scale value to be between 0.25 and 1.0
+    scale = Math.max(0.25, Math.min(1.0, scale));
+    const width = 512 * scale;
+    const height = 240 * scale;
     grid.style.gridTemplateColumns = 'repeat(auto-fill, ' + width + 'px)';
     grid.style.gridAutoRows = height + 'px';
-
-    slider.title = Math.floor(scale * 100) + '%';
 }
 
 // function setTheme(id) {

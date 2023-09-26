@@ -240,8 +240,9 @@ body {
     padding: 16px;
 }
 
-#scale input {
-    width: 100%
+#scale span {
+    display: block;
+    padding-right: 8px;
 }
 
 #grid {
@@ -251,8 +252,8 @@ body {
     grid-column: 2/3;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, 256px);
-    grid-auto-rows: 120px;
+    grid-template-columns: repeat(auto-fill, 512px);
+    grid-auto-rows: 240px;
     justify-content: space-between;
     grid-gap: 16px;
     padding: 16px;
