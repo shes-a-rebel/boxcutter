@@ -274,10 +274,7 @@ fetch(file).then(function (response) {
     const scaleCookie = getCookie('scale');
     if (scaleCookie) {
         slider.value = scaleCookie;
-        const width = 256 * scaleCookie;
-        const height = 118 * scaleCookie;
-        grid.style.gridTemplateColumns = 'repeat(auto-fill, ' + width + 'px)';
-        grid.style.gridAutoRows = height + 'px';
+        setScale(scaleCookie);
     }
 
     // Remove loading screen
@@ -356,6 +353,15 @@ function setFilter(event) {
     applyFilters();
 }
 
+function setScale(scale) {
+    const width = 256 * scale;
+    const height = 118 * scale;
+    grid.style.gridTemplateColumns = 'repeat(auto-fill, ' + width + 'px)';
+    grid.style.gridAutoRows = height + 'px';
+
+    slider.title = Math.floor(scale * 100) + '%';
+}
+
 // function setTheme(id) {
 //     const style = document.getElementById('colorscheme');
 //     style.href = 'css/themes/' + id + '.css';
@@ -366,10 +372,6 @@ function setFilter(event) {
 const slider = document.getElementById('slider');
 slider.addEventListener('input', () => {
     const scale = slider.value;
-    const width = 256 * scale;
-    const height = 118 * scale;
-    grid.style.gridTemplateColumns = 'repeat(auto-fill, ' + width + 'px)';
-    grid.style.gridAutoRows = height + 'px';
-
+    setScale(scale);
     setCookie('scale', scale, 30);
 });
