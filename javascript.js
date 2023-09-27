@@ -141,6 +141,12 @@ fetch(file).then(function (response) {
             const li = document.createElement('li');
             filtersCollection.appendChild(li);
 
+            const label = document.createElement('label');
+            label.htmlFor = 'filter-collection-' + id;
+            label.title = title;
+            label.textContent = titleShort !== undefined ? titleShort : title;
+            li.appendChild(label);
+
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.id = 'filter-collection-' + id;
@@ -150,13 +156,7 @@ fetch(file).then(function (response) {
                 filters.push('collection-' + id);
             }
             checkbox.addEventListener('change', setFilter);
-            li.appendChild(checkbox);
-
-            const label = document.createElement('label');
-            label.htmlFor = 'filter-collection-' + id;
-            label.title = title;
-            label.textContent = titleShort !== undefined ? titleShort : title;
-            li.appendChild(label);
+            label.appendChild(checkbox);
         }
     }
 
@@ -171,6 +171,12 @@ fetch(file).then(function (response) {
             const li = document.createElement('li');
             filtersType.appendChild(li);
 
+            const label = document.createElement('label');
+            label.htmlFor = 'filter-type-' + id;
+            label.title = description;
+            label.textContent = title;
+            li.appendChild(label);
+
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.id = 'filter-type-' + id;
@@ -180,13 +186,7 @@ fetch(file).then(function (response) {
                 filters.push('type-' + id);
             }
             checkbox.addEventListener('change', setFilter);
-            li.appendChild(checkbox);
-
-            const label = document.createElement('label');
-            label.htmlFor = 'filter-type-' + id;
-            label.title = description;
-            label.textContent = title;
-            li.appendChild(label);
+            label.appendChild(checkbox);
         }
     }
 
@@ -201,6 +201,12 @@ fetch(file).then(function (response) {
             const li = document.createElement('li');
             filtersLicense.appendChild(li);
 
+            const label = document.createElement('label');
+            label.htmlFor = 'filter-license-' + id;
+            label.title = description;
+            label.textContent = title;
+            li.appendChild(label);
+
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.id = 'filter-license-' + id;
@@ -210,13 +216,7 @@ fetch(file).then(function (response) {
                 filters.push('license-' + id);
             }
             checkbox.addEventListener('change', setFilter);
-            li.appendChild(checkbox);
-
-            const label = document.createElement('label');
-            label.htmlFor = 'filter-license-' + id;
-            label.title = description;
-            label.textContent = title;
-            li.appendChild(label);
+            label.appendChild(checkbox);
         }
     }
 
@@ -231,6 +231,12 @@ fetch(file).then(function (response) {
             const li = document.createElement('li');
             filtersGameplay.appendChild(li);
 
+            const label = document.createElement('label');
+            label.htmlFor = 'filter-gameplay-' + id;
+            // label.title = description;
+            label.textContent = title;
+            li.appendChild(label);
+
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.id = 'filter-gameplay-' + id;
@@ -240,13 +246,7 @@ fetch(file).then(function (response) {
                 filters.push('gameplay-' + id);
             }
             checkbox.addEventListener('change', setFilter);
-            li.appendChild(checkbox);
-
-            const label = document.createElement('label');
-            label.htmlFor = 'filter-gameplay-' + id;
-            // label.title = description;
-            label.textContent = title;
-            li.appendChild(label);
+            label.appendChild(checkbox);
         }
     }
     sortTiles('title');
