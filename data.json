@@ -1099,8 +1099,8 @@
     },
     "host": {
       "title": "Pay-to-Host",
-      "description": "Games which the host must purchase a license, but anyone else can join their lobby for free.",
-      "tooltip": "You must have a valid software license on Steam to host a lobby using this utility. Everyone else can join your lobby for free."
+      "description": "Games which the host must purchase a license, but anyone else can join their lobby at no cost.",
+      "tooltip": "You must have a valid software license on Steam to host a lobby using this utility. Everyone else can join your lobby at no cost."
     },
     "all": {
       "title": "Pay-to-Play",

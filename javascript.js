@@ -26,7 +26,7 @@ fetch(file).then(function (response) {
             const gameLicense = game.license;
             const gameMax = game.max;
             const gameMin = game.min;
-            const gameTime = game.time;
+            // const gameTime = game.time;
             const gameTitle = game.title;
             const gameType = game.type;
             const gameSorting = game.sorting;
@@ -71,7 +71,7 @@ fetch(file).then(function (response) {
             if (gameType === 'pack') {
                 tooltip += ' (' + collectionTitle + ')';
             }
-            tooltip += '\n“' + gameDescription + '\n';
+            tooltip += '\n\n“' + gameDescription + '\n';
             if (gameDate !== undefined) {
                 const date = new Date(gameDate);
                 const locale = navigator.language || 'en-US';
@@ -87,9 +87,9 @@ fetch(file).then(function (response) {
             } else if (gameMin !== undefined) {
                 tooltip += "\nPlayers: " + gameMin + "+";
             }
-            if (gameTime !== undefined) {
+            /* if (gameTime !== undefined) {
                 tooltip += '\nMinimum Time: ' + gameTime + ' minutes';
-            }
+            } */
             tooltip += '\n\n' + 'License: ' + licenseTooltip;
             anchor.title = tooltip;
             anchor.classList.add('tile');
