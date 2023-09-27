@@ -375,10 +375,11 @@ function setFilter(event) {
 }
 
 function setScale(scale) {
-    const width = 512 * scale;
-    const height = 240 * scale;
-
-    // Update the grid styles
+    const min = 0.25;
+    const max = 1.0;
+    const adjustedScale = min + scale * (max - min);
+    const width = 512 * adjustedScale;
+    const height = 240 * adjustedScale;
     grid.style.gridTemplateColumns = 'repeat(auto-fill, ' + width + 'px)';
     grid.style.gridAutoRows = height + 'px';
 }
