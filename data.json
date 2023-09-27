@@ -575,7 +575,7 @@
       "license": "host",
       "type": "pack",
       "swf": "AwShirt",
-      "gameplay": "trivia",
+      "gameplay": "drawing",
       "min": 3,
       "max": 8,
       "time": 15
