@@ -8,11 +8,11 @@ fetch(file).then(function (response) {
     const status = document.getElementById('status');
 
     // Sort the game list
-    data.games.sort(function (a, b) {
-        const sortingA = a.sorting !== undefined ? a.sorting : a.title;
-        const sortingB = b.sorting !== undefined ? b.sorting : b.title;
-        return sortingA.localeCompare(sortingB);
-    });
+    // data.games.sort(function (a, b) {
+    //     const sortingA = a.sorting !== undefined ? a.sorting : a.title;
+    //     const sortingB = b.sorting !== undefined ? b.sorting : b.title;
+    //     return sortingA.localeCompare(sortingB);
+    // });
 
     // Game tiles
     status.innerHTML = 'Unboxing games...';
@@ -29,6 +29,7 @@ fetch(file).then(function (response) {
             const gameTime = game.time;
             const gameTitle = game.title;
             const gameType = game.type;
+            const gameSorting = game.sorting;
 
             const collectionTitle = data.collections[gameCollection].title;
             const collectionSorting = data.collections[gameCollection].sorting;
@@ -70,11 +71,14 @@ fetch(file).then(function (response) {
             if (gameType === 'pack') {
                 tooltip += ' (' + collectionTitle + ')';
             }
-            tooltip += '\n“' + gameDescription;
+            tooltip += '\n“' + gameDescription + '\n';
             if (gameDate !== undefined) {
-                tooltip += '\nRelease Date: ' + gameDate;
+                const date = new Date(gameDate);
+                const locale = navigator.language || 'en-US';
+                const formattedDate = new Intl.DateTimeFormat(locale).format(date);
+                tooltip += '\nRelease Date: ' + formattedDate;
             }
-            tooltip += '\n\nGameplay: ' + gameplayTitle;
+            tooltip += '\nGameplay: ' + gameplayTitle;
             // tooltip += '\nPlayers: ' + (gameMin !== undefined ? gameMin : "") + (gameMax !== undefined ? ' - ' + gameMax : '+');
             if ((gameMin === undefined || gameMin === 1) && gameMax !== undefined) {
                 tooltip += "\nPlayers: up to " + gameMax;
@@ -115,11 +119,11 @@ fetch(file).then(function (response) {
             anchor.style.backgroundPosition = 'center';
 
             // Set the sorting tags
-            anchor.setAttribute('data-title', gameTitle);
+            anchor.setAttribute('data-title', gameSorting !== undefined ? gameSorting : gameTitle);
             anchor.setAttribute('data-collection', collectionSorting);
+            console.log(gameTitle, collectionSorting)
             anchor.setAttribute('data-gameplay', gameplayTitle);
             anchor.setAttribute('data-date', gameDate);
-
 
             grid.appendChild(anchor);
         }
@@ -245,9 +249,12 @@ fetch(file).then(function (response) {
             li.appendChild(label);
         }
     }
+    sortTiles('title');
 }).catch(function (error) {
     console.error('Error fetching JSON: ' + error);
 }).finally(function () {
+
+
     // status.innerHTML = 'Applying themes...';
     //     // Themes
     //     const themes = document.getElementById('themes');
@@ -287,7 +294,7 @@ fetch(file).then(function (response) {
     }
 
     // Scale Slider
-    const scaleCookie = getCookie('scale');
+    let scaleCookie = getCookie('scale');
     if (scaleCookie) {
         if (scaleCookie > 1.0) {
             scaleCookie = 1.0;
@@ -395,10 +402,27 @@ function sortTiles(option) {
     const tiles = Array.from(grid.getElementsByClassName('tile'));
 
     tiles.sort((a, b) => {
-        const aValue = a.getAttribute(`data-${option}`);
-        const bValue = b.getAttribute(`data-${option}`);
+        const aValue = a.getAttribute(`data-title`);
+        const bValue = b.getAttribute(`data-title`);
         return aValue.localeCompare(bValue);
     });
+
+    if (option !== title) {
+        let descending = false;
+        if (option === 'date-desc') {
+            option = 'date'
+            descending = true;
+        }
+        tiles.sort((a, b) => {
+            const aValue = a.getAttribute(`data-${option}`);
+            const bValue = b.getAttribute(`data-${option}`);
+            if (descending === false) {
+                return aValue.localeCompare(bValue);
+            } else {
+                return bValue.localeCompare(aValue);
+            }
+        });
+    }
 
     // Clear the grid and append sorted tiles
     grid.innerHTML = '';
