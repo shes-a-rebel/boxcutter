@@ -1,4 +1,5 @@
 const file = 'data.json'
+const grid = document.getElementById('grid');
 
 let filters = [];
 
@@ -6,14 +7,6 @@ fetch(file).then(function (response) {
     return response.json();
 }).then(function (data) {
     const status = document.getElementById('status');
-
-    // Sort the game list
-    // data.games.sort(function (a, b) {
-    //     const sortingA = a.sorting !== undefined ? a.sorting : a.title;
-    //     const sortingB = b.sorting !== undefined ? b.sorting : b.title;
-    //     return sortingA.localeCompare(sortingB);
-    // });
-
     // Game tiles
     status.innerHTML = 'Unboxing games...';
     for (const game of data.games) {
@@ -59,7 +52,6 @@ fetch(file).then(function (response) {
             let params = 'collection-' + gameCollection + ' license-' + gameLicense + ' type-' + ((gameType === 'app' || gameType === 'pack') ? 'download' : 'website') + ' gameplay-' + gameGameplay;
 
             // Tile: anchor
-            const grid = document.getElementById('grid');
             const anchor = document.createElement('a');
             if (collectionDisabled === true || licenseDisabled === true || gameType === 'web' || gameplayDisabled === true) {
                 anchor.classList.add('hidden');
@@ -121,7 +113,6 @@ fetch(file).then(function (response) {
             // Set the sorting tags
             anchor.setAttribute('data-title', gameSorting !== undefined ? gameSorting : gameTitle);
             anchor.setAttribute('data-collection', collectionSorting);
-            console.log(gameTitle, collectionSorting)
             anchor.setAttribute('data-gameplay', gameplayTitle);
             anchor.setAttribute('data-date', gameDate);
 
@@ -398,7 +389,6 @@ function setScale(scale) {
 // }
 
 function sortTiles(option) {
-    const grid = document.getElementById('grid');
     const tiles = Array.from(grid.getElementsByClassName('tile'));
 
     tiles.sort((a, b) => {
