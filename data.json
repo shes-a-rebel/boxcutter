@@ -1091,18 +1091,18 @@
   },
   "licenses": {
     "free": {
-      "title": "Free-to-Play",
+      "title": "Free",
       "description": "Games that are completely free to play.",
       "tooltip": "This does not require the purchase of a software license to host or play.",
       "disabled": true
     },
     "host": {
-      "title": "Pay-to-Host",
+      "title": "Host",
       "description": "Games which the host must purchase a license, but anyone else can join their lobby at no cost.",
       "tooltip": "You must have a valid software license on Steam to host a lobby using this utility. Everyone else can join your lobby at no cost."
     },
     "all": {
-      "title": "Pay-to-Play",
+      "title": "Everyone",
       "description": "Games which everyone must purchase a license to play.",
       "tooltip": "You must have a valid software license on Steam to host a lobby using this utility. Everyone else must have a valid software license on a compatible platform or service to join your lobby.",
       "disabled": true
