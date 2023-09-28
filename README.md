@@ -4,9 +4,7 @@ Box cutter is a party game utility for quickly viewing and launching popular par
 
 It was originally intended to be used for the Jackbox Party Pack games, but support has been added for other titles.
 
-Games from the Jackbox Party Packs are launched directly, without the user needing to navigate through the Party Pack's main menu.
-
-No games are modified with this tool.
+Games from the Jackbox Party Packs are launched directly, without the user needing to navigate through the Party Pack's main menu. No games are modified with this tool.
 
 [Box cutter demo](https://shes-a-rebel.github.io/boxcutter/)
 
@@ -14,7 +12,7 @@ No games are modified with this tool.
 
 The tool only supports games that are available on Steam or through the web browser. For games on Steam, the user must have a valid license to install and play the game. At this time, it is not possible to support games on other services, such as the Epic Games Store.
 
-The Steam Browser Protocol(https://developer.valvesoftware.com/wiki/Steam_browser_protocol) must be enabled and working to launch any locally installed games.
+The [Steam Browser Protocol](https://developer.valvesoftware.com/wiki/Steam_browser_protocol) must be enabled and working to launch any locally installed games.
 
 ## Development progress
 
