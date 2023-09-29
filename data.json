@@ -665,7 +665,7 @@
       "description": "Ever wished someone would answer your texts for you? Imagined the masterful comebacks you and your friends would create if you mashed all your brains together? You’re in luck! This game lets you play out that fantasy with all of the chaos, and none of the backlash",
       "license": "host",
       "type": "pack",
-      "swf": "",
+      "swf": "RiskyText",
       "gameplay": "writing",
       "min": 3,
       "max": 8,
@@ -673,6 +673,7 @@
     },
     {
       "tested": false,
+      "hidden": true,
       "collection": 11,
       "title": "Tee K.O. 2",
       "description": "The fan-favorite fashion throw down returns! Create the ultimate garment out of your own weird drawings and slogans, then send it into battle. But with new drawing tools, new clothing options like hoodies and tank tops, and a new button-pounding final round… who will emerge as the next champion of Tee Shirt Island?",
@@ -691,7 +692,7 @@
       "description": "Hello gorgeous nature. Welcome to an uncharted jungle, inhabited by musical birds who play songs for a carnivorous plant that MIGHT eat them, if they don’t play their notes accurately. Are they dodos? No. Did they evolve from dodos? Maybe…don’t overthink it. We didn’t.",
       "license": "host",
       "type": "pack",
-      "swf": "",
+      "swf": "NopusOpus",
       "gameplay": "musical",
       "min": 1,
       "max": 9,
@@ -701,6 +702,7 @@
       "tested": false,
       "collection": 11,
       "title": "Hypnotorious",
+      "hidden": true,
       "description": "HYPNOSIS, TEAMWORK AND HIDDEN IDENTITIES!!! In Hypnotorious, players are attending a hypnotist’s show, where, as you might expect, they get hypnotized. Each player will take on a new, unique identity such as Frankenstein, a snowman or a carrot. They will then be asked to answer questions as their character would.",
       "license": "host",
       "type": "pack",
@@ -713,6 +715,7 @@
     {
       "tested": false,
       "collection": 11,
+      "hidden": true,
       "title": "Time Jinx",
       "description": "What would you do if you had a time machine? Would you go back and try to fix some mistakes? Would you travel into the future to see who you’ve become? No, of course not! You’d use it to play an immersive trivia game!",
       "license": "host",
@@ -989,6 +992,16 @@
     },
     {
       "collection": -1,
+      "title": "Make It Meme",
+      "description": "Each player gets a random meme and has to think of a text for the meme within a given time. After that, the players rate each other's memes and award their Meme-Buddy. Whoever has collected the most points at the end wins!",
+      "image": "make_it_meme.jpg",
+      "type": "web",
+      "license": "free",
+      "gameplay": "writing",
+      "website": "https://makeitmeme.com/"
+    },
+    {
+      "collection": -1,
       "title": "skribbl.io",
       "description": "skribbl.io is a free online multiplayer drawing and guessing pictionary game.",
       "image": "skribbl.jpg",
@@ -1085,7 +1098,6 @@
       "titleShort": "Party Pack 10",
       "sorting": "11",
       "appid": "2216830",
-      "hidden": true,
       "date": "2023-10-18"
     }
   },
