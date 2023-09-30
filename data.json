@@ -151,7 +151,9 @@
       "gameplay": "musical",
       "min": 3,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "family": true
     },
     {
       "collection": 2,
@@ -163,7 +165,9 @@
       "gameplay": "deception",
       "min": 2,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "family": true
     },
     {
       "collection": 2,
@@ -176,7 +180,9 @@
       "gameplay": "writing",
       "min": 3,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "family": true
     },
     {
       "collection": 3,
@@ -188,7 +194,10 @@
       "gameplay": "drawing",
       "min": 3,
       "max": 8,
-      "time": 30
+      "time": 30,
+      "audience": true,
+      "twitch": true,
+      "censoring": true
     },
     {
       "collection": 3,
@@ -200,7 +209,10 @@
       "gameplay": "writing",
       "min": 3,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "family": true,
+      "twitch": true
     },
     {
       "collection": 3,
@@ -212,7 +224,9 @@
       "gameplay": "trivia",
       "min": 1,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "twitch": true
     },
     {
       "collection": 3,
@@ -224,7 +238,11 @@
       "gameplay": "deception",
       "min": 3,
       "max": 6,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "family": true,
+      "twitch": true,
+      "censoring": true
     },
     {
       "collection": 3,
@@ -236,7 +254,10 @@
       "gameplay": "voting",
       "min": 2,
       "max": 8,
-      "time": 15
+      "time": 15,
+      "audience": true,
+      "family": true,
+      "twitch": true
     },
     {
       "collection": 4,
@@ -776,7 +797,7 @@
     },
     {
       "collection": -1,
-      "title": "Marbels on Stream",
+      "title": "Marbles on Stream",
       "description": "Marbles on Stream is a Marble Racing game for EVERYONE! You can simulate races yourself or stream it on Twitch.tv with your viewers! Many features in game to help interact with your viewers and engage with them in unique ways. 3 ways to play! Download and stream! Download the MoS app on your mobile device! Get on Twitch.",
       "type": "app",
       "license": "free",
@@ -929,7 +950,7 @@
     {
       "tested": false,
       "collection": -1,
-      "title": "Game Beasts",
+      "title": "Gang Beasts",
       "description": "Gang Beasts is a silly multiplayer party game with surly gelatinous characters, brutal slapstick fight sequences, and absurd hazardous environments, set in the mean streets of Beef City.",
       "type": "app",
       "gameplay": "skill",
@@ -938,6 +959,32 @@
       "max": 8,
       "date": "2017-12-12"
     },
+
+    {
+      "tested": false,
+      "collection": -1,
+      "title": "Clue/Cluedo: Classic Edition",
+      "description": "The official digital version of Hasbro’s classic mystery board game, Cluedo (Clue). Roll the dice and launch into a murder investigation. Whodunit? With what weapon? Where? You’ll need all your brain power to find the answers you need, as you race your friends and family to the truth!",
+      "type": "app",
+      "gameplay": "puzzle",
+      "license": "all",
+      "appid": "794800",
+      "max": 6,
+      "date": "2018-05-17"
+    },
+
+    {
+      "tested": false,
+      "collection": -1,
+      "title": "UNO",
+      "description": "UNO makes its return with new exciting features! Match cards by color or value and play action cards to change things up. Race against others to empty your hand before everyone else in Classic play or customize your experience with House Rules.",
+      "type": "app",
+      "gameplay": "skill",
+      "license": "all",
+      "appid": "470220",
+      "date": "2016-12-08"
+    },
+
     {
       "collection": -1,
       "title": "Words On Stream",
@@ -1014,7 +1061,8 @@
   ],
   "collections": {
     "-1": {
-      "title": "Other Games",
+      "title": "Other Games (Not Jackbox)",
+      "titleShort": "Other Games",
       "sorting": 999,
       "disabled": true
     },
@@ -1133,6 +1181,10 @@
   },
   "gameplays": {
     "musical": {
+      "title": "musical",
+      "override": "audio"
+    },
+    "audio": {
       "title": "Audio"
     },
     "dating": {
@@ -1173,6 +1225,23 @@
     },
     "unknown": {
       "title": "Other Gameplay"
+    }
+  },
+  "options": {
+    "audience": {
+      "title": "Audience"
+    },
+    "censoring": {
+      "title": "Manual Censoring"
+    },
+    "family": {
+      "title": "Family Friendly"
+    },
+    "moderation": {
+      "title": "Moderation"
+    },
+    "twitch": {
+      "title": "Twitch Login"
     }
   }
 }
