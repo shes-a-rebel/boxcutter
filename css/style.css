@@ -115,7 +115,6 @@ body {
 #title {
     padding: 4px 8px;
     margin: 0;
-    border-bottom: 1px solid var(--highlight);
     border-right: 1px solid var(--highlight);
     background: var(--dark);
 }
@@ -127,12 +126,12 @@ body {
 }
 
 #sidebar div {
-    padding: 0px;
-    margin-top: 8px;
+    border-top: 1px solid var(--highlight);
+    padding: 8px 0;
 }
 
 #sidebar #sorting {
-    padding: 0px 8px;
+    padding: 8px 8px;
 }
 
 #sidebar #sorting select {
@@ -143,12 +142,6 @@ body {
 #sidebar #sorting select option {
     width: 100%;
     color: var(--dark);
-}
-
-#sidebar #filters {
-    border-top: 1px solid var(--highlight);
-    margin-top: 16px;
-    padding: 16px 0 0 0;
 }
 
 #sidebar #filters ul {
@@ -180,7 +173,8 @@ body {
     display: none;
 }
 
-#sidebar #filters>ul>li>ul>li label {
+#sidebar #filters>ul>li>ul>li label,
+#sidebar #options>ul>li label {
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -188,11 +182,13 @@ body {
     text-indent: 36px;
 }
 
-#sidebar #filters>ul>li>ul>li label:hover {
+#sidebar #filters>ul>li>ul>li label:hover,
+#sidebar #options>ul>li label:hover {
     background-color: var(--dark);
 }
 
-#sidebar #filters>ul>li>ul>li input {
+#sidebar #filters>ul>li>ul>li input,
+#sidebar #options>ul>li input {
     position: absolute;
     left: 16px;
 }
@@ -224,15 +220,22 @@ body {
     padding: 16px;
 }
 
-#grid .tile {
+#grid .game {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-#grid .tile:hover {
+#grid .game:hover {
     cursor: pointer;
     outline-offset: 2px;
     outline: var(--highlight) solid 4px;
 }
+
+/* #grid .divider {
+    font-weight: bold;
+    grid-column: 1/-1;
+    grid-auto-rows: 32px;
+    border-bottom: 1px solid var(--highlight);
+} */
 
 #footer {
     background: var(--dark);

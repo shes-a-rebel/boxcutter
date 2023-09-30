@@ -25,7 +25,7 @@
             <span class="bold center">box cutter</span>
             <span class="center">a party game launcher</span>
         </div>
-        <div id="sidebar">
+        <div id="sidebar" class="scrollable">
             <div id="sorting"><span class="bold center">Sorting</span>
                 <select id="sortby">
                     <option value="title">Title</option>
@@ -35,7 +35,7 @@
                     <option value="date-desc">Release Date (Desc)</option>
                 </select>
             </div>
-            <div id="filters" class="scrollable"><span class="bold center">Filters</span>
+            <div id="filters"><span class="bold center">Filters</span>
                 <ul>
                     <li id="collection" onclick="collapseFilter(event, 'collection')">
                         <span class="bold">Collection</span>
@@ -55,6 +55,9 @@
                     </li>
                 </ul>
             </div>
+            <!-- <div id="options"><span class="bold center">Game Options</span>
+                <ul></ul>
+            </div> -->
         </div>
         <div id="scale">
             <span>Zoom</span>

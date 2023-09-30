@@ -84,7 +84,7 @@ fetch(file).then(function (response) {
             } */
             tooltip += '\n\n' + 'License: ' + licenseTooltip;
             anchor.title = tooltip;
-            anchor.classList.add('tile');
+            anchor.classList.add('tile', 'game');
 
             // Generate the href and image
             if (gameType === 'app') {
