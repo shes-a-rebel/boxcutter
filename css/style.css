@@ -1,3 +1,9 @@
+/*!
+ * Box Cutter (https://github.com/shes-a-rebel/boxcutter)
+ * Copyright 2023 shes_a_rebel (LGG)
+ * Licensed under MIT (https://github.com/shes-a-rebel/boxcutter/blob/main/LICENSE)
+ */
+
 :root {
     --highlight: #EEEEEE;
     --light: #CCCCCC;
@@ -240,67 +246,27 @@ body {
 #footer {
     background: var(--dark);
     padding: 8px;
-    display: flex;
     border-top: 1px solid var(--highlight);
-}
-
-#footer #themes,
-#footer #links {
-    width: 50%;
-    flex: 1px;
-}
-
-#footer #themes {
-    line-height: 32px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
-#footer #themes>div {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    display: flex;
-    padding: 0px;
+#footer a,
+#footer span {
+    margin-left: 4px;
 }
 
-#footer #themes div div {
-    cursor: pointer;
-}
-
-#footer #themes div div.left {
-    width: 12px;
-    border-bottom-left-radius: 24px;
-    border-top-left-radius: 24px;
-    border: 1px solid var(--highlight);
-    border-right: 0;
-}
-
-#footer #themes div div.right {
-    width: 12px;
-    border-bottom-right-radius: 24px;
-    border-top-right-radius: 24px;
-    border: 1px solid var(--highlight);
-    border-left: 0;
-}
-
-
-#footer #themes div:hover {
-    cursor: pointer;
-}
-
-#footer #links {
-    text-align: right;
-}
-
-#footer #links a {
+#footer a {
     text-decoration: none;
 }
 
-#footer #links a img {
+#footer a img {
     height: 32px;
-    margin-left: 4px;
+}
+
+#footer span {
+    font-size: smaller;
 }
 
 .bold {

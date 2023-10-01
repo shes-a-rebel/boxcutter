@@ -1,3 +1,9 @@
+/*!
+ * Box Cutter (https://github.com/shes-a-rebel/boxcutter)
+ * Copyright 2023 shes_a_rebel (LGG)
+ * Licensed under MIT (https://github.com/shes-a-rebel/boxcutter/blob/main/LICENSE)
+ */
+
 const file = 'data.json'
 const grid = document.getElementById('grid');
 
@@ -63,7 +69,7 @@ fetch(file).then(function (response) {
             if (gameType === 'pack') {
                 tooltip += ' (' + collectionTitle + ')';
             }
-            tooltip += '\n\n“' + gameDescription + '\n';
+            tooltip += '\n\n“' + gameDescription + '”\n';
             if (gameDate !== undefined) {
                 const date = new Date(gameDate);
                 const locale = navigator.language || 'en-US';
