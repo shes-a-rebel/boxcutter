@@ -1,7 +1,5 @@
 /*!
  * Box Cutter (https://github.com/shes-a-rebel/boxcutter)
- * Copyright 2023 shes_a_rebel (LGG)
- * Licensed under MIT (https://github.com/shes-a-rebel/boxcutter/blob/main/LICENSE)
  */
 
 const file = 'data.json'

@@ -6,6 +6,8 @@ It was originally intended to be used for the Jackbox Party Pack games, but supp
 
 Games from the Jackbox Party Packs are launched directly, without the user needing to navigate through the Party Pack's main menu. No games are modified with this tool.
 
+The developer claims no ownership of any and all assets located within the `images/branding` and `images/tiles` directories and their subdirectories.
+
 [Box Cutter demo](https://shes-a-rebel.github.io/boxcutter/)
 
 ## Requirements
@@ -26,11 +28,3 @@ The following Jackbox Party Pack games need to be tested to verify they launch c
 ## Known Issues
 
 Drawful and Fibbage, from the original Jackbox Party Pack, do not load correctly. They are not shown within the utility as a result.
-
-## License
-
-Box Cutter is released under the MIT license and is copyright 2023 shes_a_rebel (LGG).
-
-The license text is located within [the project repository](https://github.com/shes-a-rebel/boxcutter/blob/main/LICENSE).
-
-The developer claims no ownership of any and all art assets located within the `images/branding` and `images/tiles` directories and their subdirectories.
