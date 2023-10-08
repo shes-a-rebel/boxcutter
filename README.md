@@ -1,25 +1,25 @@
 # Box Cutter
 
-Box Cutter is a party game utility for quickly viewing and launching popular party game titles from one location.
+Box Cutter is a utility for quickly viewing and launching Jackbox party games from one location.
 
-It was originally intended to be used for the Jackbox Party Pack games, but support has been added for other titles.
-
-Games from the Jackbox Party Packs are launched directly, without the user needing to navigate through the Party Pack's main menu. No games are modified with this tool.
-
-The developer claims no ownership of any and all assets located within the `images/branding` and `images/tiles` directories and their subdirectories.
+Party pack games are launched directly, without needing to navigate through a party pack's menu. No game files are modified with this tool.
 
 [Box Cutter demo](https://shes-a-rebel.github.io/boxcutter/)
 
 ## Requirements
 
-The tool only supports games that are available on Steam or through the web browser. For games on Steam, the user must have a valid license to install and play the game. At this time, it is not possible to support games on other services, such as the Epic Games Store.
+The tool only supports games that are available on Steam.
+
+The user must have a valid license to install and run the game.
+
+At this time, it is not possible to support games on other services, such as the Epic Games Store.
 
 The [Steam Browser Protocol](https://developer.valvesoftware.com/wiki/Steam_browser_protocol) must be enabled and working to launch any locally installed games.
 
 ## Development progress
 
 The following Jackbox Party Pack games need to be tested to verify they launch correctly:
-- The Jackbox Party Pack 7 (all titles)
+- The Jackbox Party Pack 7 (all titles, excluding Quiplash 3)
 - The Jackbox Party Pack 8 (all titles)
 - The Jackbox Party Starter (all titles)
 - The Jackbox Party Pack 9 (all titles)
@@ -28,3 +28,9 @@ The following Jackbox Party Pack games need to be tested to verify they launch c
 ## Known Issues
 
 Drawful and Fibbage, from the original Jackbox Party Pack, do not load correctly. They are not shown within the utility as a result.
+
+Exiting a party pack game through the in-game menus will return to the pack's menu. There is no fix for this behavior.
+
+## Legal
+
+Box Cutter is a hobby project and is not affiliated with Jackbox Games, Inc. or Valve Corporation. All trademarks are property of their respective owners.
