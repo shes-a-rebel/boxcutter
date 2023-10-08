@@ -20,7 +20,6 @@ fetch(file).then(function (response) {
 
         if (gameHidden !== true && collectionHidden !== true) {
             const gameDescription = game.description;
-            const gameLicense = game.license;
             const gameMax = game.max;
             const gameMin = game.min;
             // const gameTime = game.time;
@@ -31,10 +30,6 @@ fetch(file).then(function (response) {
             const collectionTitle = data.collections[gameCollection].title;
             const collectionSorting = data.collections[gameCollection].sorting;
             const collectionDisabled = data.collections[gameCollection].disabled;
-
-            // const licenseTitle = data.licenses[gameLicense].title;
-            const licenseTooltip = data.licenses[gameLicense].tooltip;
-            const licenseDisabled = data.licenses[gameLicense].disabled;
 
             let gameGameplay;
             if (game.gameplay !== undefined) {
@@ -53,11 +48,11 @@ fetch(file).then(function (response) {
             const gameDate = gameType === 'pack' ? data.collections[gameCollection].date : game.date;
 
             // Tile: params
-            let params = 'collection-' + gameCollection + ' license-' + gameLicense + ' type-' + ((gameType === 'app' || gameType === 'pack') ? 'download' : 'website') + ' gameplay-' + gameGameplay;
+            let params = 'collection-' + gameCollection + ' type-' + ((gameType === 'app' || gameType === 'pack') ? 'download' : 'website') + ' gameplay-' + gameGameplay;
 
             // Tile: anchor
             const anchor = document.createElement('a');
-            if (collectionDisabled === true || licenseDisabled === true || gameType === 'web' || gameplayDisabled === true) {
+            if (collectionDisabled === true || gameplayDisabled === true) {
                 anchor.classList.add('hidden');
             }
             anchor.setAttribute('data-params', params);
@@ -86,7 +81,6 @@ fetch(file).then(function (response) {
             /* if (gameTime !== undefined) {
                 tooltip += '\nMinimum Time: ' + gameTime + ' minutes';
             } */
-            tooltip += '\n\n' + 'License: ' + licenseTooltip;
             anchor.title = tooltip;
             anchor.classList.add('tile', 'game');
 
@@ -149,66 +143,6 @@ fetch(file).then(function (response) {
                 checkbox.checked = true;
             } else {
                 filters.push('collection-' + id);
-            }
-            checkbox.addEventListener('change', setFilter);
-            label.appendChild(checkbox);
-        }
-    }
-
-    // Filters: type
-    const filtersType = document.getElementById('type').querySelector("ul");
-
-    for (const id in data.types) {
-        if (data.types[id].hidden !== true) {
-            const title = data.types[id].title;
-            const description = data.types[id].description;
-
-            const li = document.createElement('li');
-            filtersType.appendChild(li);
-
-            const label = document.createElement('label');
-            label.htmlFor = 'filter-type-' + id;
-            label.title = description;
-            label.textContent = title;
-            li.appendChild(label);
-
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.id = 'filter-type-' + id;
-            if (data.types[id].disabled === undefined) {
-                checkbox.checked = true;
-            } else {
-                filters.push('type-' + id);
-            }
-            checkbox.addEventListener('change', setFilter);
-            label.appendChild(checkbox);
-        }
-    }
-
-    // Filters: license
-    const filtersLicense = document.getElementById('license').querySelector("ul");
-
-    for (const id in data.licenses) {
-        if (data.licenses[id].hidden !== true) {
-            const title = data.licenses[id].title;
-            const description = data.licenses[id].description;
-
-            const li = document.createElement('li');
-            filtersLicense.appendChild(li);
-
-            const label = document.createElement('label');
-            label.htmlFor = 'filter-license-' + id;
-            label.title = description;
-            label.textContent = title;
-            li.appendChild(label);
-
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.id = 'filter-license-' + id;
-            if (data.licenses[id].disabled === undefined) {
-                checkbox.checked = true;
-            } else {
-                filters.push('license-' + id);
             }
             checkbox.addEventListener('change', setFilter);
             label.appendChild(checkbox);
