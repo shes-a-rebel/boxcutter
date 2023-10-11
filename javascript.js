@@ -7,10 +7,14 @@ const grid = document.getElementById('grid');
 
 let filters = [];
 
+let selectedAppid;
+let selectedLaunch;
+
 fetch(file).then(function (response) {
     return response.json();
 }).then(function (data) {
     const status = document.getElementById('status');
+
     // Game tiles
     status.innerHTML = 'Unboxing games...';
     for (const game of data.games) {
@@ -22,7 +26,6 @@ fetch(file).then(function (response) {
             const gameDescription = game.description;
             const gameMax = game.max;
             const gameMin = game.min;
-            // const gameTime = game.time;
             const gameTitle = game.title;
             const gameType = game.type;
             const gameSorting = game.sorting;
@@ -47,76 +50,85 @@ fetch(file).then(function (response) {
 
             const gameDate = gameType === 'pack' ? data.collections[gameCollection].date : game.date;
 
-            // Tile: params
-            let params = 'collection-' + gameCollection + ' type-' + ((gameType === 'app' || gameType === 'pack') ? 'download' : 'website') + ' gameplay-' + gameGameplay;
+            const appid = gameType === 'app' ? game.appid : data.collections[gameCollection].appid;
+            const gameSwf = game.swf;
+            const gameSubfolder = game.subfolder !== undefined ? game.subfolder : gameSwf;
+            const gameImage = gameType === 'app' ? 'images/tiles/app/' + appid + '.jpg' : 'images/tiles/pack/' + gameCollection + '/' + gameSwf + '.png';
 
-            // Tile: anchor
-            const anchor = document.createElement('a');
+            const div = document.createElement('div');
             if (collectionDisabled === true || gameplayDisabled === true) {
-                anchor.classList.add('hidden');
+                div.classList.add('hidden');
             }
-            anchor.setAttribute('data-params', params);
-
-            // Create the tooltip
-            let tooltip = gameTitle;
-            if (gameType === 'pack') {
-                tooltip += ' (' + collectionTitle + ')';
-            }
-            tooltip += '\n\n“' + gameDescription + '”\n';
-            if (gameDate !== undefined) {
-                const date = new Date(gameDate);
-                const locale = navigator.language || 'en-US';
-                const formattedDate = new Intl.DateTimeFormat(locale).format(date);
-                tooltip += '\nRelease Date: ' + formattedDate;
-            }
-            tooltip += '\nGameplay: ' + gameplayTitle;
-            // tooltip += '\nPlayers: ' + (gameMin !== undefined ? gameMin : "") + (gameMax !== undefined ? ' - ' + gameMax : '+');
-            if ((gameMin === undefined || gameMin === 1) && gameMax !== undefined) {
-                tooltip += "\nPlayers: up to " + gameMax;
-            } else if (gameMin !== undefined && gameMax !== undefined) {
-                tooltip += "\nPlayers: " + gameMin + " - " + gameMax;
-            } else if (gameMin !== undefined) {
-                tooltip += "\nPlayers: " + gameMin + "+";
-            }
-            /* if (gameTime !== undefined) {
-                tooltip += '\nMinimum Time: ' + gameTime + ' minutes';
-            } */
-            anchor.title = tooltip;
-            anchor.classList.add('tile', 'game');
-
-            // Generate the href and image
-            if (gameType === 'app') {
-                const gameAppid = game.appid;
-
-                anchor.href = 'steam://run/' + gameAppid;
-                anchor.style.backgroundImage = 'url(images/tiles/app/' + gameAppid + '.jpg)';
-            } else if (gameType === 'pack') {
-                const collectionAppid = data.collections[gameCollection].appid;
-                const gameSwf = game.swf;
-                const gameSubfolder = game.subfolder !== undefined ? game.subfolder : gameSwf;
-
-                anchor.href = 'steam://rungameid/' + collectionAppid + '//-launchTo games\\' + gameSubfolder + '\\' + gameSwf + '.swf';
-                anchor.style.backgroundImage = 'url(images/tiles/pack/' + gameCollection + '/' + gameSwf + '.png)';
-            } else if (gameType === 'web') {
-                const gameWebsite = game.website;
-                const gameImage = game.image;
-
-                anchor.href = gameWebsite;
-                anchor.setAttribute('target', '_blank');
-                anchor.style.backgroundImage = 'url(images/tiles/web/' + gameImage + ')';
-            }
-            anchor.style.backgroundSize = 'cover';
-            anchor.style.backgroundPosition = 'center';
+            div.setAttribute('data-params', 'collection-' + gameCollection + ' gameplay-' + gameGameplay);
+            div.classList.add('tile', 'game');
 
             // Set the sorting tags
-            anchor.setAttribute('data-title', gameSorting !== undefined ? gameSorting : gameTitle);
-            anchor.setAttribute('data-collection', collectionSorting);
-            anchor.setAttribute('data-gameplay', gameplayTitle);
-            anchor.setAttribute('data-date', gameDate);
+            div.setAttribute('data-title', gameSorting !== undefined ? gameSorting : gameTitle);
+            div.setAttribute('data-collection', collectionSorting);
+            div.setAttribute('data-gameplay', gameplayTitle);
+            div.setAttribute('data-date', gameDate);
 
-            grid.appendChild(anchor);
+            div.title = gameTitle;
+
+            // Set the info click event
+            div.addEventListener('click', function () {
+                const infoDate = document.getElementById('info-date');
+                const infoPlayers = document.getElementById('info-players');
+                const right = document.getElementById('right');
+
+                infoImage = document.getElementById('info-image');
+                infoImage.style.backgroundImage = 'url(' + gameImage + ')';
+                infoImage.style.backgroundSize = 'cover';
+                infoImage.style.backgroundPosition = 'center';
+
+                document.getElementById('info-game').innerHTML = gameTitle;
+                document.getElementById('info-collection').innerHTML = collectionTitle;
+                document.getElementById('info-description').innerHTML = '“' + gameDescription + '”';
+                if (gameDate !== undefined) {
+                    const date = new Date(gameDate);
+                    const locale = navigator.language || 'en-US';
+                    const formattedDate = new Intl.DateTimeFormat(locale).format(date);
+
+                    infoDate.innerHTML = formattedDate;
+                } else {
+                    infoDate.innerHTML = '';
+                }
+                document.getElementById('info-gameplay').innerHTML = gameplayTitle;
+                if ((gameMin === undefined || gameMin === 1) && gameMax !== undefined) {
+                    infoPlayers.innerHTML = 'up to ' + gameMax;
+                } else if (gameMin !== undefined && gameMax !== undefined) {
+                    infoPlayers.innerHTML = gameMin + " - " + gameMax;
+                } else if (gameMin !== undefined) {
+                    infoPlayers.innerHTML = gameMin + '+';
+                } else {
+                    infoPlayers.innerHTML = '';
+                }
+
+                selectedAppid = appid;
+                selectedLaunch = gameType === 'app' ? 'run/' + appid : 'rungameid/' + appid + '//-launchTo games\\' + gameSubfolder + '\\' + gameSwf + '.swf';
+
+                if (right.style.display !== "block") {
+                    right.style.display = "block";
+                }
+            });
+
+            div.style.backgroundImage = 'url(' + gameImage + ')';
+            div.style.backgroundSize = 'cover';
+            div.style.backgroundPosition = 'center';
+
+            grid.appendChild(div);
         }
     }
+
+    document.getElementById('info-store').addEventListener('click', function () {
+        window.open('steam://advertise/' + selectedAppid + '/', '_blank');
+    });
+    document.getElementById('info-install').addEventListener('click', function () {
+        window.open('steam://install/' + selectedAppid + '/', '_blank');
+    });
+    document.getElementById('info-run').addEventListener('click', function () {
+        window.open('steam://' + selectedLaunch);
+    });
 
     status.innerHTML = 'Generating filters...';
     // Filter: collections
@@ -178,38 +190,11 @@ fetch(file).then(function (response) {
             label.appendChild(checkbox);
         }
     }
+
     sortTiles('title');
 }).catch(function (error) {
     console.error('Error fetching JSON: ' + error);
 }).finally(function () {
-
-
-    // status.innerHTML = 'Applying themes...';
-    //     // Themes
-    //     const themes = document.getElementById('themes');
-    //     for (const id in data.themes) {
-    //         const div = document.createElement('div');
-    //         themes.appendChild(div);
-    //         div.title = id;
-    //         div.addEventListener('click', function () {
-    //             setTheme(id);
-    //         });
-
-    //         const left = document.createElement('div');
-    //         left.style.backgroundColor = data.themes[id].color1;
-    //         left.classList.add('left');
-    //         div.appendChild(left);
-
-    //         const right = document.createElement('div');
-    //         right.style.backgroundColor = data.themes[id].color2;
-    //         right.classList.add('right');
-    //         div.appendChild(right);
-
-    //         if (getCookie('theme') === id) {
-    //             setTheme(getCookie('theme'))
-    //         }
-    //     }
-
     // Warning prompt
     const testCookie = "agreeDevelopment20230921";
     if (getCookie(testCookie) !== "true") {
@@ -320,12 +305,6 @@ function setScale(scale) {
     grid.style.gridAutoRows = height + 'px';
 }
 
-// function setTheme(id) {
-//     const style = document.getElementById('colorscheme');
-//     style.href = 'css/themes/' + id + '.css';
-//     setCookie("theme", id, 30)
-// }
-
 function sortTiles(option) {
     const tiles = Array.from(grid.getElementsByClassName('tile'));
 
@@ -358,16 +337,19 @@ function sortTiles(option) {
 }
 
 // Tile scale slider
-const slider = document.getElementById('slider');
-slider.addEventListener('input', () => {
+document.getElementById('slider').addEventListener('input', () => {
     const scale = slider.value;
     setScale(scale);
     setCookie('scale', scale, 30);
 });
 
-// Sorting event
-const sortby = document.getElementById('sortby');
-sortby.addEventListener('change', function () {
+// // Sorting event
+document.getElementById('sortby').addEventListener('change', function () {
     const option = sortby.value;
     sortTiles(option)
+});
+
+// Close info bar
+document.getElementById('info-close').addEventListener('click', function () {
+    document.getElementById('right').style.display = 'none';
 });

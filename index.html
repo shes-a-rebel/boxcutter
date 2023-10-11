@@ -21,53 +21,82 @@
                 <button id="popup-agree">Close</button>
             </div>
         </div>
-        <div id="title">
-            <span class="bold center">box cutter</span>
-            <span class="center">a party game launcher</span>
-        </div>
-        <div id="sidebar" class="scrollable">
-            <div id="sorting"><span class="bold center">Sorting</span>
-                <select id="sortby">
-                    <option value="title">Title</option>
-                    <option value="collection">Collection</option>
-                    <option value="gameplay">Gameplay</option>
-                    <option value="date">Release Date (Asc)</option>
-                    <option value="date-desc">Release Date (Desc)</option>
-                </select>
+        <div id="left">
+            <div id="title">
+                <span class="bold">box cutter</span><br>
+                <span>a party game launcher</span>
             </div>
-            <div id="filters"><span class="bold center">Filters</span>
-                <ul>
-                    <li id="collection" onclick="collapseFilter(event, 'collection')">
-                        <span class="bold">Group</span>
-                        <ul></ul>
-                    </li>
-                    <li id="gameplay" onclick="collapseFilter(event, 'gameplay')">
-                        <span class="bold">Gameplay</span>
-                        <ul></ul>
-                    </li>
-                </ul>
+            <div id="options" class="scrollable">
+                <div id="sorting"><span class="bold center">Sorting</span>
+                    <select id="sortby">
+                        <option value="title">Title</option>
+                        <option value="collection">Collection</option>
+                        <option value="gameplay">Gameplay</option>
+                        <option value="date">Release Date (Asc)</option>
+                        <option value="date-desc">Release Date (Desc)</option>
+                    </select>
+                </div>
+                <div id="filters"><span class="bold center">Filters</span>
+                    <ul>
+                        <li id="collection" onclick="collapseFilter(event, 'collection')">
+                            <span class="bold">Group</span>
+                            <ul></ul>
+                        </li>
+                        <li id="gameplay" onclick="collapseFilter(event, 'gameplay')">
+                            <span class="bold">Gameplay</span>
+                            <ul></ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- <div id="options"><span class="bold center">Game Options</span>
-                <ul></ul>
-            </div> -->
-        </div>
-        <div id="scale">
-            <span>Zoom</span>
-            <input type="range" min="0.0" max="1.0" step="0.05" value="0.5" id="slider">
-        </div>
-        <div id="grid" class="scrollable"></div>
-        <div id="footer">
-            <div id="legal">
-                Box Cutter is a hobby project and is not affiliated with <a href="https://www.jackboxgames.com/">Jackbox Games, Inc.</a> or <a
-                    href="https://www.valvesoftware.com/">Valve Corporation</a>.<br>All trademarks are property of their respective owners.
+            <div id="scale">
+                <span>Zoom</span>
+                <input type="range" min="0.0" max="1.0" step="0.05" value="0.5" id="slider">
             </div>
-            <div id="links">
-                <a href="https://github.com/shes-a-rebel/boxcutter" target="_blank" title="GitHub repository"><img
-                        src="images\branding\github.png"></a>
-                <a href="https://ko-fi.com/shes_a_rebel" target="_blank" title="Ko-fi"><img src="images\branding\ko-fi.png"></a>
+        </div>
+        <div id="main" class="scrollable">
+            <div id="grid"></div>
+            <div id="footer">
+                <div id="legal">
+                    Box Cutter is a hobby project and is not affiliated with <a href="https://www.jackboxgames.com/">Jackbox Games, Inc.</a> or <a
+                        href="https://www.valvesoftware.com/">Valve Corporation</a>.<br>All trademarks are property of their respective owners.
+                </div>
+                <div id="links">
+                    <a href="https://github.com/shes-a-rebel/boxcutter" target="_blank" title="GitHub repository"><img
+                            src="images\branding\github.png"></a>
+                    <a href="https://ko-fi.com/shes_a_rebel" target="_blank" title="Ko-fi"><img src="images\branding\ko-fi.png"></a>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="info">
+                <div id="info-header">
+                    <div id="info-image"></div>
+                    <div id="info-game">Game Name</div>
+                    <div id="info-collection">Pack Name</div>
+                </div>
+                <div id="info-body" class="scrollable">
+                    <div id="info-description"></div>
+                    <div class="bold right">Released:</div>
+                    <div id="info-date"></div>
+                    <div class="bold right">Gameplay:</div>
+                    <div id="info-gameplay"></div>
+                    <div class="bold right">Players:</div>
+                    <div id="info-players"></div>
+                </div>
+                <div id="info-buttons">
+                    <div id="info-store">Store</div>
+                    <div id="info-install">Install</div>
+                    <div id="info-run">Launch</div>
+                    <div id="info-close">Close</div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- <div id="container">
+
+
+    </div> -->
     <script src="javascript.js"></script>
 </body>
 
