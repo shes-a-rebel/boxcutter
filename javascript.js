@@ -29,6 +29,11 @@ fetch(file).then(function (response) {
             const gameTitle = game.title;
             const gameType = game.type;
             const gameSorting = game.sorting;
+            const gameDate = gameType === 'pack' ? data.collections[gameCollection].date : game.date;
+            const gameAppid = gameType === 'app' ? game.appid : data.collections[gameCollection].appid;
+            const gameSwf = game.swf;
+            const gameSubfolder = game.subfolder !== undefined ? game.subfolder : gameSwf;
+            const gameImage = gameType === 'app' ? 'images/tiles/app/' + gameAppid + '.jpg' : 'images/tiles/pack/' + gameCollection + '/' + gameSwf + '.png';
 
             const collectionTitle = data.collections[gameCollection].title;
             const collectionSorting = data.collections[gameCollection].sorting;
@@ -47,13 +52,6 @@ fetch(file).then(function (response) {
 
             const gameplayTitle = data.gameplays[gameGameplay].title;
             const gameplayDisabled = data.gameplays[gameGameplay].disabled;
-
-            const gameDate = gameType === 'pack' ? data.collections[gameCollection].date : game.date;
-
-            const appid = gameType === 'app' ? game.appid : data.collections[gameCollection].appid;
-            const gameSwf = game.swf;
-            const gameSubfolder = game.subfolder !== undefined ? game.subfolder : gameSwf;
-            const gameImage = gameType === 'app' ? 'images/tiles/app/' + appid + '.jpg' : 'images/tiles/pack/' + gameCollection + '/' + gameSwf + '.png';
 
             const div = document.createElement('div');
             if (collectionDisabled === true || gameplayDisabled === true) {
@@ -104,8 +102,8 @@ fetch(file).then(function (response) {
                     infoPlayers.innerHTML = '';
                 }
 
-                selectedAppid = appid;
-                selectedLaunch = gameType === 'app' ? 'run/' + appid : 'rungameid/' + appid + '//-launchTo games\\' + gameSubfolder + '\\' + gameSwf + '.swf';
+                selectedAppid = gameAppid;
+                selectedLaunch = gameType === 'app' ? 'run/' + gameAppid : 'rungameid/' + gameAppid + '//-launchTo games\\' + gameSubfolder + '\\' + gameSwf + '.swf';
 
                 if (right.style.display !== "block") {
                     right.style.display = "block";

@@ -8,6 +8,7 @@
     --background: #999999;
     --sidebar: #666666;
     --dark: #333333;
+    --button: #0000EE;
 }
 
 * {
@@ -213,7 +214,7 @@ body {
     display: grid;
     flex: 1;
     /* align-items: start; */
-    align-content: space-between; 
+    align-content: space-between;
 }
 
 #grid {
@@ -244,6 +245,10 @@ body {
 #legal {
     padding: 8px;
     font-size: smaller;
+    color: var(--dark);
+}
+
+#legal a {
     color: var(--dark);
 }
 
@@ -294,6 +299,7 @@ body {
 }
 
 #info-buttons {
+    width: 256px;
     position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -305,15 +311,23 @@ body {
 
 #info-buttons>div {
     text-align: center;
-    padding: 16px;
     cursor: pointer;
     font-weight: bold;
+    padding: 8px;
+}
+
+#info-buttons svg {
+    width: 50%;
 }
 
 #info-buttons>div:hover {
-    background: var(--light);
-    color: var(--dark);
+    background: var(--button);
+    /* color: var(--dark); */
 }
+
+/* #info-buttons>div:hover svg {
+    stroke: var(--dark);
+} */
 
 #info-install {
     border-left: 1px solid var(--highlight);
