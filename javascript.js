@@ -72,15 +72,15 @@ fetch(file).then(function (response) {
             div.addEventListener('click', function () {
                 const infoDate = document.getElementById('info-date');
                 const infoPlayers = document.getElementById('info-players');
-                const right = document.getElementById('right');
+                const bottom = document.getElementById('bottom');
 
                 infoImage = document.getElementById('info-image');
                 infoImage.style.backgroundImage = 'url(' + gameImage + ')';
                 infoImage.style.backgroundSize = 'cover';
                 infoImage.style.backgroundPosition = 'center';
 
-                document.getElementById('info-game').innerHTML = gameTitle;
-                document.getElementById('info-collection').innerHTML = collectionTitle;
+                // document.getElementById('info-game').innerHTML = gameTitle;
+                // document.getElementById('info-collection').innerHTML = collectionTitle;
                 document.getElementById('info-description').innerHTML = '“' + gameDescription + '”';
                 if (gameDate !== undefined) {
                     const date = new Date(gameDate);
@@ -105,8 +105,8 @@ fetch(file).then(function (response) {
                 selectedAppid = gameAppid;
                 selectedLaunch = gameType === 'app' ? 'run/' + gameAppid : 'rungameid/' + gameAppid + '//-launchTo games\\' + gameSubfolder + '\\' + gameSwf + '.swf';
 
-                if (right.style.display !== "block") {
-                    right.style.display = "block";
+                if (bottom.style.display !== "block") {
+                    bottom.style.display = "block";
                 }
             });
 
@@ -349,5 +349,5 @@ document.getElementById('sortby').addEventListener('change', function () {
 
 // Close info bar
 document.getElementById('info-close').addEventListener('click', function () {
-    document.getElementById('right').style.display = 'none';
+    document.getElementById('bottom').style.display = 'none';
 });
