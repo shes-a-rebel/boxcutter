@@ -194,7 +194,7 @@ fetch(file).then(function (response) {
     console.error('Error fetching JSON: ' + error);
 }).finally(function () {
     // Warning prompt
-    const testCookie = "agreeDevelopment20230921";
+    const testCookie = "agreeDevelopment20231013";
     if (getCookie(testCookie) !== "true") {
         const popupContainer = document.getElementById('popup-container');
         const agreeButton = document.getElementById('popup-agree');
