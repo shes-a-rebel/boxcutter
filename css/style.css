@@ -271,12 +271,11 @@ body {
 #info-close {
     position: absolute;
     cursor: pointer;
-    top: -17px;
-    width: 32px;
+    top: 0px;
+    width: 16px;
     height: 16px;
     background: var(--dark);
-    left: 95%;
-    transform: translateX(-50%);
+    right: 0px;
     text-align: center;
     border: 1px solid var(--highlight);
 }
@@ -339,6 +338,8 @@ body {
 
 #info-description {
     grid-column: 1 / 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #footer #links a {
